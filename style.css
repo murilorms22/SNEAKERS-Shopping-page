@@ -98,30 +98,42 @@ header img {
 }
 
 .cardTenis {
-    background-color: rgb(71, 71, 71);
-    border: 2px solid white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 400px;
-    gap: 20px;
+    width: 32%;
+    height: auto;
 
     font-family: futura;
     color: white;
     font-size: 40px;
     transition: 0.2s ease;
     cursor: pointer;
+    position: relative;
 }
 
 .cardTenis:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .cardTenis img {
-    width: 60%;
+    width: 100%;
+}
+
+.cardTenis h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    background-color: white;
+    color: var(--not-black);
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    box-shadow: 0px 0px 20px #0000006c;
 }
 
 #carrossel {
@@ -134,7 +146,7 @@ header img {
 }
 
 #carrossel img {
-    height: 700px;
+    height: 650px;
     width: 100%;
     object-fit: cover;
 }
@@ -159,7 +171,7 @@ header img {
 
 #sideBar {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: 1px solid red;
+    border: 1px solid var(--not-black);
     width: 300px;
     height: 100vh;
     position: fixed;
