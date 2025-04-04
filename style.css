@@ -42,7 +42,7 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 header nav ul li::after {
@@ -81,7 +81,7 @@ header img {
 }
 
 #iconsHeader img{
-    width: 50px;
+    width: 40px;
 }
 
 #containerBody {
@@ -138,6 +138,7 @@ header img {
 
 #carrossel {
     display: flex;
+    position: relative;
     justify-content: space-around;
     margin-inline: auto;
     height: 700px;
@@ -146,8 +147,8 @@ header img {
 }
 
 #carrossel img {
-    height: 650px;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -199,20 +200,59 @@ header img {
 }
 
 .cardProduto {
-    width: 400px;
-    height: 280px;
+    width: 25%;
+    height: auto;
     text-align: center;
     padding: 30px;
     border-radius: 10px;
     border: 1px solid var(--not-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.cardProduto .infos {
+    width: 88%;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+
+.cardProduto button {
+    width: 90%;
+    padding: 10px 0px;
+    font-size: 40px;
+    color: white;
+    background: var(--not-black);
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
 .cardProduto img {
-    width: 80%;
+    width: 300px;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5%;
+    height: 10px;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: var(--not-black);
+    transition: width 10s linear;
 }

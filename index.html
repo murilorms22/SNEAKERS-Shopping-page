@@ -27,10 +27,13 @@
         </div>
     </div>
 </header>
-<body>
+<body onload="iniciarTudo()">
     <div id="containerBody">
         <div id="carrossel">
             <img id="imgCarrossel" src="assets/images/puma.jpg" alt="Carrossel de fotos">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>            
         </div>
 
         <div id="grid">
@@ -48,7 +51,6 @@
             </div>
         </div>
         <div id="footer">
-            <button onclick="loop()">A</button>
         </div>
     </div>
 </body>
