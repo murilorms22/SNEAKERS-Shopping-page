@@ -20,7 +20,7 @@ async function loop() {
 
         }
         
-        await sleep(10000);
+        await sleep(7000);
         if(i==3) {
             i = 0;
         }
@@ -36,10 +36,10 @@ function startProgressBar() {
 
         void progress.offsetWidth;
 
-        progress.style.transition = "width 10s linear";
+        progress.style.transition = "width 7s linear";
         progress.style.width = "100%";
 
-        setTimeout(loop, 10000);
+        setTimeout(loop, 7000);
     }
 
     loop();

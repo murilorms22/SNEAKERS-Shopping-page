@@ -1,5 +1,9 @@
 :root {
     --not-black: rgb(15, 15, 15);
+    --futura: 'Futura', sans-serif;
+    --futura-bold: 'Futura-Bold', sans-serif;
+    --futura-light: 'Futura-Light', sans-serif;
+    --futura-extra-bold: 'Futura-Extra-Bold', sans-serif;
 }
 
 * {
@@ -203,19 +207,20 @@ header img {
     width: 25%;
     height: auto;
     text-align: center;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid var(--not-black);
+    border: 1px solid rgba(15, 15, 15, 0.171);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    box-shadow: 0px 0px 10px #00000020;
 }
 
 .cardProduto .infos {
     width: 88%;
     justify-content: space-between;
     margin-inline: auto;
+    font-size: 20px;
+    font-family: var(--futura);
 }
 
 .cardProduto button {
@@ -226,10 +231,12 @@ header img {
     background: var(--not-black);
     border-radius: 20px;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .cardProduto img {
-    width: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 .row {
