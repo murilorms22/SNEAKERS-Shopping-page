@@ -185,6 +185,7 @@ header img {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    margin-top: 100px;
 }
 
 .filtros {
@@ -294,4 +295,54 @@ header img {
     width: 0%;
     background-color: var(--not-black);
     transition: width 10s linear;
+}
+
+.lancamento img {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.lancamento {
+    display: flex;
+    flex-direction: column;
+}
+
+.lancamento .texto {
+    color: white;
+    text-align: center;
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-130%);
+    font-size: 50px;
+    font-family: var(--futura);
+}
+
+.texto h2 {
+    font-size: 50px;
+    color: rgb(31, 100, 31);
+    letter-spacing: 13px;
+}
+
+.lancamento button {
+    display: flex;
+    text-align: center;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 9999px;
+    background-color: rgb(31, 100, 31);
+    color: white;
+    font-family: var(--futura);
+    font-size: 30px;
+    justify-content: center;
+    margin-inline: auto;
+
+    transform: translateY(-300%);
+}
+
+header.esporte {
+    position: fixed;
+    width: 100%;
 }
