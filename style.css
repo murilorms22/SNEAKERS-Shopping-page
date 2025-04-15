@@ -339,10 +339,19 @@ header img {
     justify-content: center;
     margin-inline: auto;
 
+    transition: 0.2s ease;
     transform: translateY(-300%);
+}
+
+.lancamento button:hover {
+    background-color: rgb(53, 110, 53);
 }
 
 header.esporte {
     position: fixed;
     width: 100%;
+}
+
+button {
+    cursor: pointer;
 }
