@@ -48,20 +48,4 @@ function startProgressBar() {
 function iniciarTudo() {
     startProgressBar();
     loop();
-    headerSome();
 }
-
-  let lastScroll = 0;
-  const header = document.getElementById("main-header");
-
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll < lastScroll) {
-      header.classList.remove("hide"); // Mostra o header
-    } else {
-      header.classList.add("hide"); // Esconde o header
-    }
-
-    lastScroll = currentScroll;
-  });

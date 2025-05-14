@@ -367,9 +367,8 @@ button {
 }
 
 #fotoPrincipal {
-    border: 1px solid var(--not-black);
-    width: 80%;
-    height: 80%;
+    width: 740px;
+    height: 760px;
 }
 
 #fotoPrincipal img {
@@ -402,7 +401,6 @@ button {
 #conteudoPrincipal {
     display: flex;
     flex-direction: row;
-    border: 1px solid rgb(255, 0, 0);
     gap: 10px;
     width: 60%;
 }
@@ -411,7 +409,6 @@ button {
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 5px solid green;
 }
 
 #textosShopPage {
@@ -419,3 +416,5 @@ button {
     flex-direction: column;
     margin-inline: auto;
 }
+
+.textoClaro {}
