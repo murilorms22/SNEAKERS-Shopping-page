@@ -1,420 +1,463 @@
 :root {
-    --not-black: rgb(15, 15, 15);
-    --futura: 'Futura', sans-serif;
-    --futura-bold: 'Futura-Bold', sans-serif;
-    --futura-light: 'Futura-Light', sans-serif;
-    --futura-extra-bold: 'Futura-Extra-Bold', sans-serif;
-    --fonte-card: "Encode Sans Condensed", sans-serif;
+  --not-black: rgb(15, 15, 15);
+  --futura: "Futura", sans-serif;
+  --futura-bold: "Futura-Bold", sans-serif;
+  --futura-light: "Futura-Light", sans-serif;
+  --futura-extra-bold: "Futura-Extra-Bold", sans-serif;
+  --fonte-card: "Encode Sans Condensed", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--not-black);
+  background-color: var(--not-black);
+  overflow-x: hidden;
 }
 
 header {
-    background-color: var(--not-black);
-    height: 100px;
-    align-items: center;
+  background-color: var(--not-black);
+  height: 100px;
+  align-items: center;
 
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
 }
 
-#headerContent {    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100%;
-    width: 95%;
-    margin-inline: auto;
-    align-items: center;
+#headerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 95%;
+  margin-inline: auto;
+  align-items: center;
 }
 
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    gap: 100px;
-    font-size: 30px;    
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 100px;
+  font-size: 30px;
 }
 
 header nav ul li {
-    position: relative;
-    transition: 0.1s ease;
+  position: relative;
+  transition: 0.1s ease;
 }
 
 header nav ul li:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 header nav ul li::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: 0.2s ease-in-out;
 }
 
 header nav ul li:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 a {
-    text-transform: uppercase;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 1000;
-    color: white;
-    text-decoration: none;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 1000;
+  color: white;
+  text-decoration: none;
 }
 
 header img {
-    width: 250px;
+  width: 250px;
 }
 
 #iconsHeader {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
-#iconsHeader img{
-    width: 40px;
+#iconsHeader img {
+  width: 40px;
 }
 
 #containerBody {
-    width: 100%;
+  width: 100%;
 }
 
 #grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-inline: auto;
-    width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-inline: auto;
+  width: 80%;
 }
 
 .cardTenis {
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 32%;
-    height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  height: auto;
 
-    font-family: futura;
-    color: white;
-    font-size: 40px;
-    transition: 0.2s ease;
-    cursor: pointer;
-    position: relative;
+  font-family: futura;
+  color: white;
+  font-size: 40px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  position: relative;
 }
 
-.cardTenis:hover{
-    transform: scale(1.01);
+.cardTenis:hover {
+  transform: scale(1.01);
 }
 
 .cardTenis img {
-    width: 100%;
+  width: 100%;
 }
 
 .cardTenis h1 {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    background-color: white;
-    color: var(--not-black);
-    padding: 10px 20px;
-    border-radius: 9999px;
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  background-color: white;
+  color: var(--not-black);
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
-    box-shadow: 0px 0px 20px #0000006c;
+  box-shadow: 0px 0px 20px #0000006c;
 }
 
 #carrossel {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    margin-inline: auto;
-    height: 700px;
-    width: 100%;
-    margin-bottom: 100px;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  margin-inline: auto;
+  height: 700px;
+  width: 100%;
+  margin-bottom: 100px;
 }
 
 #carrossel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #footer {
-    margin-top: 100px;
-    height: 500px;
-    background-color: rgb(36, 36, 36);
+  margin-top: 100px;
+  height: 500px;
+  background-color: rgb(36, 36, 36);
 }
 
 #containerShopping {
-    width: 100%;
-    height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 310px;
-    padding: 20px;
-    margin-top: 100px;
+  width: 100%;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 310px;
+  padding: 20px;
+  margin-top: 100px;
 }
 
 #bodyShopping {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 #sideBar {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: 1px solid var(--not-black);
-    width: 300px;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 1px solid var(--not-black);
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
 
 .filtros {
-    background-color: rgb(228, 228, 228);
-    border-radius: 5px;
-    height: 30px;
-    width: 95%;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    font-weight: 600;
+  background-color: rgb(228, 228, 228);
+  border-radius: 5px;
+  height: 30px;
+  width: 95%;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
 }
 
 #produtos {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 82%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 82%;
 }
 
 .cardProduto {
-    width: 24%;
-    height: auto;
-    text-align: start;
-    border: 1px solid rgba(15, 15, 15, 0.171);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    box-shadow: 0px 0px 10px #00000020;
+  width: 24%;
+  height: auto;
+  text-align: start;
+  border: 1px solid rgba(15, 15, 15, 0.171);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0px 0px 10px #00000020;
 }
 
 .cardProduto h1 {
-    text-align: left;
+  text-align: left;
 }
 
 .cardProduto .infos {
-    width: 88%;
-    margin-inline: auto;
-    font-size: 20px;
-    font-family: "Encode Sans Condensed";
-    font-weight: 900;
+  width: 88%;
+  margin-inline: auto;
+  font-size: 20px;
+  font-family: "Encode Sans Condensed";
+  font-weight: 900;
 }
 
 .cardProduto button {
-    width: 90%;
-    padding: 10px 0px;
-    font-size: 25px;
-    color: white;
-    background: var(--not-black);
-    border-radius: 20px;
-    margin-bottom: 40px;
-    border: none;
+  width: 90%;
+  padding: 10px 0px;
+  font-size: 25px;
+  color: white;
+  background: var(--not-black);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  border: none;
 }
 
 .cardProduto img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .titulos {
-    width: 88%;
-    font-family: "Encode Sans Condensed", sans-serif;
+  width: 88%;
+  font-family: "Encode Sans Condensed", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.titulos h1{
-    font-weight: 800;
+.titulos h1 {
+  font-weight: 800;
 }
 
 .infos h2 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .titulos h3 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .titulos h3 {
-    color: rgba(43, 43, 43, 0.842);
+  color: rgba(43, 43, 43, 0.842);
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .progress-bar {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 5%;
-    height: 10px;
-    background-color: white;
-    border-radius: 3px;
-    overflow: hidden;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5%;
+  height: 10px;
+  background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .progress {
-    height: 100%;
-    width: 0%;
-    background-color: var(--not-black);
-    transition: width 10s linear;
+  height: 100%;
+  width: 0%;
+  background-color: var(--not-black);
+  transition: width 10s linear;
 }
 
 .lancamento img {
-    width: 100%;
-    margin-top: 100px;
-    position: relative;
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
 }
 
 .lancamento {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .lancamento .texto {
-    color: white;
-    text-align: center;
-    display: flex;
-    margin-inline: auto;
-    justify-content: center;
-    flex-direction: column;
-    transform: translateY(-130%);
-    font-size: 50px;
-    font-family: var(--futura);
+  color: white;
+  text-align: center;
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(-130%);
+  font-size: 50px;
+  font-family: var(--futura);
 }
 
 .texto h2 {
-    font-size: 50px;
-    color: rgb(31, 100, 31);
-    letter-spacing: 13px;
+  font-size: 50px;
+  color: rgb(31, 100, 31);
+  letter-spacing: 13px;
 }
 
 .lancamento button {
-    display: flex;
-    text-align: center;
-    padding: 20px 50px;
-    border: none;
-    border-radius: 9999px;
-    background-color: rgb(31, 100, 31);
-    color: white;
-    font-family: var(--futura);
-    font-size: 30px;
-    justify-content: center;
-    margin-inline: auto;
+  display: flex;
+  text-align: center;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 9999px;
+  background-color: rgb(31, 100, 31);
+  color: white;
+  font-family: var(--futura);
+  font-size: 30px;
+  justify-content: center;
+  margin-inline: auto;
 
-    transition: 0.2s ease;
-    transform: translateY(-300%);
+  transition: 0.2s ease;
+  transform: translateY(-300%);
 }
 
 .lancamento button:hover {
-    background-color: rgb(53, 110, 53);
+  background-color: rgb(53, 110, 53);
 }
 
 header.esporte {
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #bodyShopPage {
-    background-color: white;
+  background-color: white;
 }
 
 #fotoPrincipal {
-    width: 740px;
-    height: 760px;
+  width: 740px;
+  height: 760px;
 }
 
 #fotoPrincipal img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #fotosLaterais {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 600px;
-    width: 185px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 600px;
+  width: 185px;
+  justify-content: space-between;
 }
 
 #fotosLaterais img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #containerShopPage {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-    margin-block: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  margin: auto;
+  margin-block: 50px;
 }
 
 #conteudoPrincipal {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 60%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 60%;
 }
 
 #conteudoTodo {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 #textosShopPage {
-    display: flex;
-    flex-direction: column;
-    margin-inline: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  background-color: rgba(211, 211, 211, 0.507);
+  border-radius: 30px;
+  padding: 30px;
+  font-family: var(--futura);
+  margin-left: 10px;
+  gap: 30px;
 }
 
-.textoClaro {}
+#textosShopPage .descProduto {
+  font-family: var(--futura-light);
+}
+
+#textosShopPage .titulo {
+  font-size: 50px;
+  margin-top: 60px;
+}
+
+#textosShopPage .preco {
+  font-size: 30px;
+}
+
+#textosShopPage button {
+  font-size: 20px;
+  color: var(--not-black);
+  background: white;
+  border: 1px solid var(--not-black);
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+#textosShopPage .textoClaro {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: rgb(105, 105, 105);
+}
+
+.textoClaro {
+}

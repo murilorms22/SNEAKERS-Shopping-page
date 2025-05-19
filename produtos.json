@@ -1,0 +1,27 @@
+[
+    {
+        "id": "tenis01",
+        "nome": "Tênis nike teste",
+        "preco": "499.99",
+        "descricao": "Tênis Nike com tecnologia de amortecimento e design moderno.",
+        "imagem": "./assets/tenisShop/esporte/nike1.jpg",
+        "marca": "nike"
+    },
+
+    {   "id": "tenis02",
+        "nome": "Tênis adidas teste",
+        "preco": "399.99",
+        "descricao": "Tênis Adidas com estilo esportivo e conforto.",
+        "imagem": "./assets/tenisShop/esporte/nike2.jpg",
+        "marca": "adidas"
+    },
+
+    {
+        "id": "tenis03",
+        "nome": "Tênis puma teste",
+        "preco": "299.99",
+        "descricao": "Tênis Puma com design arrojado e tecnologia de ponta.",
+        "imagem": "./assets/tenisShop/esporte/nike3.jpg",
+        "marca": "puma"
+    }
+]
