@@ -1,0 +1,50 @@
+[
+{ "categoria": "casual",
+    "produtos": [
+  {"id": 1, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/1.webp"},
+  {"id": 2, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/2.webp"},
+  {"id": 3, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/3.webp"},
+  {"id": 4, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/4.webp"},
+  {"id": 5, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/5.webp"},
+  {"id": 6, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/6.webp"},
+  {"id": 7, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/7.webp"},
+  {"id": 8, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/8.webp"},
+  {"id": 9, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/9.webp"},
+  {"id": 10, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/10.webp"},
+  {"id": 11, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/11.webp"},
+  {"id": 12, "nome": "Tênis casual", "descricao": "Tênis esportivo", "cores": 2, "preco": 300, "imagem": "../assets/tenisShop/casual/12.webp"}
+]
+},
+{
+  "categoria": "esportivo",
+  "produtos": [
+    {"id": 13, "imagem": "../assets/tenisShop/esporte/nike1.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" },
+    {"id": 14, "imagem": "../assets/tenisShop/esporte/nike2.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" },
+    {"id": 15, "imagem": "../assets/tenisShop/esporte/nike3.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" },
+    {"id": 16, "imagem": "../assets/tenisShop/esporte/nike4.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" },
+    {"id": 17, "imagem": "../assets/tenisShop/esporte/nike5.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" },
+    {"id": 18, "imagem": "../assets/tenisShop/esporte/nike6.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" },
+    {"id": 19, "imagem": "../assets/tenisShop/esporte/nike7.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" },
+    {"id": 20, "imagem": "../assets/tenisShop/esporte/nike8.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" },
+    {"id": 21, "imagem": "../assets/tenisShop/esporte/nike9.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" },
+    {"id": 22, "imagem": "../assets/tenisShop/esporte/nike1.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "preco": "R$300" }
+  ]
+},
+{
+  "categoria": "social",
+  "produtos": [
+    {"id": 23, "imagem": "../assets/tenisShop/social/1.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 24, "imagem": "../assets/tenisShop/social/2.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 25, "imagem": "../assets/tenisShop/social/3.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 26, "imagem": "../assets/tenisShop/social/4.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 27, "imagem": "../assets/tenisShop/social/5.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 28, "imagem": "../assets/tenisShop/social/6.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 29, "imagem": "../assets/tenisShop/social/7.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 30, "imagem": "../assets/tenisShop/social/8.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 31, "imagem": "../assets/tenisShop/social/9.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 32, "imagem": "../assets/tenisShop/social/10.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 33, "imagem": "../assets/tenisShop/social/11.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" },
+    {"id": 34, "imagem": "../assets/tenisShop/social/12.webp", "nome": "Tênis social", "descricao": "Tênis social", "preco": "R$300" }
+  ]
+}
+]

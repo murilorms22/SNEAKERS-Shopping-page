@@ -49,3 +49,11 @@ function iniciarTudo() {
     startProgressBar();
     loop();
 }
+
+function toggleButton(button) {
+    document.querySelectorAll('#btnTamanho').forEach(btn => {
+        btn.classList.remove('selected');
+    });
+    
+    button.classList.add('selected');
+}

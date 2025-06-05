@@ -421,14 +421,14 @@ button {
   flex-direction: column;
   margin-inline: auto;
   background-color: rgba(211, 211, 211, 0.507);
-  border-radius: 30px;
+  border-radius: 5px;
   padding: 30px;
   font-family: var(--futura);
   margin-left: 10px;
   gap: 30px;
 }
 
-#textosShopPage .descProduto {
+#textosShopPage .descricao {
   font-family: var(--futura-light);
 }
 
@@ -459,5 +459,28 @@ button {
   color: rgb(105, 105, 105);
 }
 
-.textoClaro {
+#textosShopPage button#btnTamanho {
+  width: 50px;
+  height: 40px;
+  font-size: 20px;
+  padding: 0;
+  border-radius: 5px;
+}
+
+#textosShopPage .tamanhos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#textosShopPage .tamanhos button.selected {
+  background-color: var(--not-black);
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+
+a button.btnVerMais {
+  width: 300px;
 }
