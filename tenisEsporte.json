@@ -1,0 +1,17 @@
+{
+  "categoria": "Tênis esportivo",
+  "produtos": [
+    { "imagem": "../assets/tenisShop/esporte/nike1.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike2.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike3.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike4.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike5.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike6.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike7.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike8.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike9.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike10.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike5.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" },
+    { "imagem": "../assets/tenisShop/esporte/nike1.png", "nome": "Giannis 4 Imortality", "descricao": "Tênis esportivo", "variacoes": "7 cores", "preco": "R$300" }
+  ]
+}
