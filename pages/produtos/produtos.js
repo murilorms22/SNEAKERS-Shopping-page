@@ -3,25 +3,39 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-// 2. Obtenha o ID do produto da URL
 const idProduto = getQueryParam("id");
 
-// 3. Carregue o JSON com os produtos
 fetch("produtos.JSON")
     .then(response => response.json())
-    .then(produtos => {
-        const produto = produtos.find(p => p.id == idProduto);
+    .then(categorias => {
+        let produtoEncontrado = null;
 
-        if (produto) {
-            document.getElementById("imagemProduto").src = produto.imagem;
-            document.getElementById("titulo").textContent = produto.nome;
-            document.getElementById("descricao").textContent = produto.descricao;
-            document.getElementById("preco").textContent = "R$ " + produto.preco.toFixed(2).replace('.', ',');
+        for(const categoria of categorias) {
+            const produto = categoria.produtos.find(p => p.id == idProduto);
+            if(produto){
+                produtoEncontrado = produto;
+                break;
+            }
+        }
+
+        if (produtoEncontrado) {
+            document.getElementById("imagemProduto").src = produtoEncontrado.imagem;
+            document.getElementById("titulo").textContent = produtoEncontrado.nome;
+            document.getElementById("descricao").textContent = produtoEncontrado.descricao;
+            document.getElementById("preco").textContent = "R$ " + produtoEncontrado.preco.toFixed(2).replace('.', ',');
+            
+            // Supondo que fotosLaterais seja um array de caminhos de imagem
+            const imagensLaterais = document.querySelectorAll(".fotosLaterais");
+
+            imagensLaterais.forEach((img, index) => {
+                img.src = produtoEncontrado.fotosLaterais[index] || produtoEncontrado.imagem;
+            });
+
         } else {
             document.body.innerHTML = "<h2>Produto não encontrado</h2>";
         }
     })
     .catch(error => {
-        console.error("Erro ao carregar os dados:", error);
+        console.error("Erro:", error);
         document.body.innerHTML = "<h2>Erro ao carregar o produto</h2>";
     });
