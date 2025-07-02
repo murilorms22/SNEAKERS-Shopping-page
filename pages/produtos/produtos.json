@@ -242,7 +242,7 @@
     ]
   },
   {
-    "categoria": "Corrida",
+    "categoria": "corrida",
     "produtos": [
       {
         "id": 23,
@@ -346,7 +346,7 @@
       },
       {
         "id": 33,
-        "imagem": "../../assets/tenisShop/run/11.png",
+        "imagem": "../../assets/tenisShop/run/11.jpeg",
         "nome": "Nike ZoomX VaporFly 3",
         "descricao": "Tênis para corrida",
         "preco": 300,

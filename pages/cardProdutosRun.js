@@ -3,10 +3,10 @@ fetch('./produtos/produtos.json')
   .then(categorias => {
     const container = document.getElementById('produtos');
 
-    const categoriaRun = categorias.find(cat => cat.categoria === 'run');
+    const categoriaCorrida = categorias.find(cat => cat.categoria === 'corrida');
 
-    if (categoriaRun && categoriaRun.produtos) {
-      categoriaRun.produtos.forEach(produto => {
+    if (categoriaCorrida && categoriaCorrida.produtos) {
+      categoriaCorrida.produtos.forEach(produto => {
         const card = document.createElement('div');
         card.className = 'cardProduto';
 
