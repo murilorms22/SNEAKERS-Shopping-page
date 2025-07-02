@@ -4,170 +4,134 @@
     "produtos": [
       {
         "id": 1,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
-        "cores": 2,
-        "preco": 300,
+        "nome": "Adidas Courtblock",
+        "descricao": "Tênis casual branco",
+        "cores": 1,
+        "preco": 299.90,
         "imagem": "../../assets/tenisShop/casual/1.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/11.webp",
-          "../../assets/tenisShop/casual/12.webp",
-          "../../assets/tenisShop/casual/13.webp",
-          "../../assets/tenisShop/casual/14.webp"
+          "../../assets/tenisShop/casual/1.webp"
         ]
       },
       {
         "id": 2,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
-        "cores": 2,
-        "preco": 300,
+        "nome": "Adidas Park ST",
+        "descricao": "Tênis casual Adidas Branco",
+        "cores": 1,
+        "preco": 279.90,
         "imagem": "../../assets/tenisShop/casual/2.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/21.webp",
-          "../../assets/tenisShop/casual/22.webp",
-          "../../assets/tenisShop/casual/23.webp",
-          "../../assets/tenisShop/casual/24.webp"
+          "../../assets/tenisShop/casual/2.webp"
         ]
       },
       {
         "id": 3,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
+        "nome": "Adidas D Rose",
+        "descricao": "Tênis Casual",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/3.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/31.webp",
-          "../../assets/tenisShop/casual/32.webp",
-          "../../assets/tenisShop/casual/33.webp",
-          "../../assets/tenisShop/casual/34.webp"
+          "../../assets/tenisShop/casual/3.webp"
         ]
       },
       {
         "id": 4,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
+        "nome": "Adidas Breaknet",
+        "descricao": "Tênis Casual",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/4.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/41.webp",
-          "../../assets/tenisShop/casual/42.webp",
-          "../../assets/tenisShop/casual/43.webp",
-          "../../assets/tenisShop/casual/44.webp"
+          "../../assets/tenisShop/casual/4.webp"
         ]
       },
       {
         "id": 5,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
+        "nome": "Adidas Park Street",
+        "descricao": "Tênis Casual",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/5.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/51.webp",
-          "../../assets/tenisShop/casual/52.webp",
-          "../../assets/tenisShop/casual/53.webp",
-          "../../assets/tenisShop/casual/54.webp"
+          "../../assets/tenisShop/casual/5.webp"
         ]
       },
       {
         "id": 6,
-        "nome": "Tênis casual",
+        "nome": "Adidas Courtblock Branco",
         "descricao": "Tênis esportivo",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/6.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/61.webp",
-          "../../assets/tenisShop/casual/62.webp",
-          "../../assets/tenisShop/casual/63.webp",
-          "../../assets/tenisShop/casual/64.webp"
+          "../../assets/tenisShop/casual/6.webp"
         ]
       },
       {
         "id": 7,
-        "nome": "Tênis casual",
+        "nome": "Mormaii Smash",
         "descricao": "Tênis esportivo",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/7.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/71.webp",
-          "../../assets/tenisShop/casual/72.webp",
-          "../../assets/tenisShop/casual/73.webp",
-          "../../assets/tenisShop/casual/74.webp"
+          "../../assets/tenisShop/casual/7.webp"
         ]
       },
       {
         "id": 8,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
+        "nome": "Nike Court Royale 2 Next Nature",
+        "descricao": "Tênis Casual",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/8.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/81.webp",
-          "../../assets/tenisShop/casual/82.webp",
-          "../../assets/tenisShop/casual/83.webp",
-          "../../assets/tenisShop/casual/84.webp"
+          "../../assets/tenisShop/casual/8.webp"
         ]
       },
       {
         "id": 9,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
+        "nome": "Adidas Breaknet Sleek Azul",
+        "descricao": "Tênis Casual",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/9.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/91.webp",
-          "../../assets/tenisShop/casual/92.webp",
-          "../../assets/tenisShop/casual/93.webp",
-          "../../assets/tenisShop/casual/94.webp"
+          "../../assets/tenisShop/casual/9.webp"
         ]
       },
       {
         "id": 10,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
+        "nome": "Adidas Park ST Cinza",
+        "descricao": "Tênis Casual",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/10.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/101.webp",
-          "../../assets/tenisShop/casual/102.webp",
-          "../../assets/tenisShop/casual/103.webp",
-          "../../assets/tenisShop/casual/104.webp"
+          "../../assets/tenisShop/casual/10.webp"
         ]
       },
       {
         "id": 11,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
+        "nome": "VOE Classic Casual",
+        "descricao": "Tênis Casual",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/11.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/111.webp",
-          "../../assets/tenisShop/casual/112.webp",
-          "../../assets/tenisShop/casual/113.webp",
-          "../../assets/tenisShop/casual/114.webp"
+          "../../assets/tenisShop/casual/11.webp"
         ]
       },
       {
         "id": 12,
-        "nome": "Tênis casual",
-        "descricao": "Tênis esportivo",
+        "nome": "Adidas Park ST Bege",
+        "descricao": "Tênis Casual",
         "cores": 2,
         "preco": 300,
         "imagem": "../../assets/tenisShop/casual/12.webp",
         "fotosLaterais": [
-          "../../assets/tenisShop/casual/121.webp",
-          "../../assets/tenisShop/casual/122.webp",
-          "../../assets/tenisShop/casual/123.webp",
-          "../../assets/tenisShop/casual/124.webp"
+          "../../assets/tenisShop/casual/12.webp"
         ]
       }
     ]
@@ -178,292 +142,226 @@
       {
         "id": 13,
         "imagem": "../../assets/tenisShop/esporte/nike1.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike KD17 Roxo",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/11.webp",
-          "../../assets/tenisShop/esporte/12.webp",
-          "../../assets/tenisShop/esporte/13.webp",
-          "../../assets/tenisShop/esporte/14.webp"
+          "../../assets/tenisShop/esporte/1.webp"
         ]
       },
       {
         "id": 14,
         "imagem": "../../assets/tenisShop/esporte/nike2.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike JA 2 \"Out My Body\"",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/21.webp",
-          "../../assets/tenisShop/esporte/22.webp",
-          "../../assets/tenisShop/esporte/23.webp",
-          "../../assets/tenisShop/esporte/24.webp"
+          "../../assets/tenisShop/esporte/2.webp"
         ]
       },
       {
         "id": 15,
         "imagem": "../../assets/tenisShop/esporte/nike3.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike Giannis Immortality 4",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/31.webp",
-          "../../assets/tenisShop/esporte/32.webp",
-          "../../assets/tenisShop/esporte/33.webp",
-          "../../assets/tenisShop/esporte/34.webp"
+          "../../assets/tenisShop/esporte/3.webp"
         ]
       },
       {
         "id": 16,
         "imagem": "../../assets/tenisShop/esporte/nike4.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike Giannis Freak 6",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/41.webp",
-          "../../assets/tenisShop/esporte/42.webp",
-          "../../assets/tenisShop/esporte/43.webp",
-          "../../assets/tenisShop/esporte/44.webp"
+          "../../assets/tenisShop/esporte/4.webp"
         ]
       },
       {
         "id": 17,
         "imagem": "../../assets/tenisShop/esporte/nike5.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike G.T. Cut 3",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/51.webp",
-          "../../assets/tenisShop/esporte/52.webp",
-          "../../assets/tenisShop/esporte/53.webp",
-          "../../assets/tenisShop/esporte/54.webp"
+          "../../assets/tenisShop/esporte/5.webp"
         ]
       },
       {
         "id": 18,
         "imagem": "../../assets/tenisShop/esporte/nike6.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike Air Zoom GT Cut",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/61.webp",
-          "../../assets/tenisShop/esporte/62.webp",
-          "../../assets/tenisShop/esporte/63.webp",
-          "../../assets/tenisShop/esporte/64.webp"
+          "../../assets/tenisShop/esporte/6.webp"
         ]
       },
       {
         "id": 19,
         "imagem": "../../assets/tenisShop/esporte/nike7.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike Sabrina 2",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/71.webp",
-          "../../assets/tenisShop/esporte/72.webp",
-          "../../assets/tenisShop/esporte/73.webp",
-          "../../assets/tenisShop/esporte/74.webp"
+          "../../assets/tenisShop/esporte/7.webp"
         ]
       },
       {
         "id": 20,
         "imagem": "../../assets/tenisShop/esporte/nike8.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike Precision 7",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/81.webp",
-          "../../assets/tenisShop/esporte/82.webp",
-          "../../assets/tenisShop/esporte/83.webp",
-          "../../assets/tenisShop/esporte/84.webp"
+          "../../assets/tenisShop/esporte/8.webp"
         ]
       },
       {
         "id": 21,
         "imagem": "../../assets/tenisShop/esporte/nike9.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike G.T. Jump 2",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/91.webp",
-          "../../assets/tenisShop/esporte/92.webp",
-          "../../assets/tenisShop/esporte/93.webp",
-          "../../assets/tenisShop/esporte/94.webp"
+          "../../assets/tenisShop/esporte/9.webp"
         ]
       },
       {
         "id": 22,
         "imagem": "../../assets/tenisShop/esporte/nike10.png",
-        "nome": "Giannis 4 Imortality",
+        "nome": "Nike KD16 Verde",
         "descricao": "Tênis esportivo",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/esporte/101.webp",
-          "../../assets/tenisShop/esporte/102.webp",
-          "../../assets/tenisShop/esporte/103.webp",
-          "../../assets/tenisShop/esporte/104.webp"
+          "../../assets/tenisShop/esporte/10.webp"
         ]
       }
     ]
   },
   {
-    "categoria": "social",
+    "categoria": "Corrida",
     "produtos": [
       {
         "id": 23,
-        "imagem": "../../assets/tenisShop/social/1.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/1.png",
+        "nome": "Nike Zoom Fly",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/11.webp",
-          "../../assets/tenisShop/social/12.webp",
-          "../../assets/tenisShop/social/13.webp",
-          "../../assets/tenisShop/social/14.webp"
+          "../../assets/tenisShop/run/1.png"
         ]
       },
       {
         "id": 24,
-        "imagem": "../../assets/tenisShop/social/2.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/2.png",
+        "nome": "Nike Rival Fly 4",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/21.webp",
-          "../../assets/tenisShop/social/22.webp",
-          "../../assets/tenisShop/social/23.webp",
-          "../../assets/tenisShop/social/24.webp"
+          "../../assets/tenisShop/run/2.png"
         ]
       },
       {
         "id": 25,
-        "imagem": "../../assets/tenisShop/social/3.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/3.png",
+        "nome": "Nike ZoomX VaporFly 4",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/31.webp",
-          "../../assets/tenisShop/social/32.webp",
-          "../../assets/tenisShop/social/33.webp",
-          "../../assets/tenisShop/social/34.webp"
+          "../../assets/tenisShop/run/3.png"
         ]
       },
       {
         "id": 26,
-        "imagem": "../../assets/tenisShop/social/4.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/4.png",
+        "nome": "Nike VaporFly 3",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/41.webp",
-          "../../assets/tenisShop/social/42.webp",
-          "../../assets/tenisShop/social/43.webp",
-          "../../assets/tenisShop/social/44.webp"
+          "../../assets/tenisShop/run/4.png"
         ]
       },
       {
         "id": 27,
-        "imagem": "../../assets/tenisShop/social/5.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/5.png",
+        "nome": "Nike AirZoom Alphafly 3",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/51.webp",
-          "../../assets/tenisShop/social/52.webp",
-          "../../assets/tenisShop/social/53.webp",
-          "../../assets/tenisShop/social/54.webp"
+          "../../assets/tenisShop/run/5.png"
         ]
       },
       {
         "id": 28,
-        "imagem": "../../assets/tenisShop/social/6.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/6.png",
+        "nome": "Nike ReactX Wildhorse",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/61.webp",
-          "../../assets/tenisShop/social/62.webp",
-          "../../assets/tenisShop/social/63.webp",
-          "../../assets/tenisShop/social/64.webp"
+          "../../assets/tenisShop/run/6.png"
         ]
       },
       {
         "id": 29,
-        "imagem": "../../assets/tenisShop/social/7.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/7.png",
+        "nome": "Nike Juniper Trail 3",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/71.webp",
-          "../../assets/tenisShop/social/72.webp",
-          "../../assets/tenisShop/social/73.webp",
-          "../../assets/tenisShop/social/74.webp"
+          "../../assets/tenisShop/run/7.png"
         ]
       },
       {
         "id": 30,
-        "imagem": "../../assets/tenisShop/social/8.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/8.png",
+        "nome": "Nike Pegasus Trail 5",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/81.webp",
-          "../../assets/tenisShop/social/82.webp",
-          "../../assets/tenisShop/social/83.webp",
-          "../../assets/tenisShop/social/84.webp"
+          "../../assets/tenisShop/run/8.png"
         ]
       },
       {
         "id": 31,
-        "imagem": "../../assets/tenisShop/social/9.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/9.png",
+        "nome": "Nike Pegasus Plus",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/91.webp",
-          "../../assets/tenisShop/social/92.webp",
-          "../../assets/tenisShop/social/93.webp",
-          "../../assets/tenisShop/social/94.webp"
+          "../../assets/tenisShop/run/9.png"
         ]
       },
       {
         "id": 32,
-        "imagem": "../../assets/tenisShop/social/10.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/10.png",
+        "nome": "Nike Pegasus 93",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/101.webp",
-          "../../assets/tenisShop/social/102.webp",
-          "../../assets/tenisShop/social/103.webp",
-          "../../assets/tenisShop/social/104.webp"
+          "../../assets/tenisShop/run/10.png"
         ]
       },
       {
         "id": 33,
-        "imagem": "../../assets/tenisShop/social/11.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/11.png",
+        "nome": "Nike ZoomX VaporFly 3",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/111.webp",
-          "../../assets/tenisShop/social/112.webp",
-          "../../assets/tenisShop/social/113.webp",
-          "../../assets/tenisShop/social/114.webp"
+          "../../assets/tenisShop/run/11.png"
         ]
       },
       {
         "id": 34,
-        "imagem": "../../assets/tenisShop/social/12.webp",
-        "nome": "Tênis social",
-        "descricao": "Tênis social",
+        "imagem": "../../assets/tenisShop/run/12.png",
+        "nome": "Nike Journey Run",
+        "descricao": "Tênis para corrida",
         "preco": 300,
         "fotosLaterais": [
-          "../../assets/tenisShop/social/121.webp",
-          "../../assets/tenisShop/social/122.webp",
-          "../../assets/tenisShop/social/123.webp",
-          "../../assets/tenisShop/social/124.webp"
+          "../../assets/tenisShop/run/12.png"
         ]
       }
     ]
