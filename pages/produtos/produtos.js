@@ -21,10 +21,9 @@ fetch("produtos.JSON")
         if (produtoEncontrado) {
             document.getElementById("imagemProduto").src = produtoEncontrado.imagem;
             document.getElementById("titulo").textContent = produtoEncontrado.nome;
-            document.getElementById("descricao").textContent = produtoEncontrado.descricao;
+            document.getElementById("descricao").textContent = produtoEncontrado.descricaoGrande;
             document.getElementById("preco").textContent = "R$ " + produtoEncontrado.preco.toFixed(2).replace('.', ',');
             
-            // Supondo que fotosLaterais seja um array de caminhos de imagem
             const imagensLaterais = document.querySelectorAll(".fotosLaterais");
 
             imagensLaterais.forEach((img, index) => {
@@ -39,3 +38,11 @@ fetch("produtos.JSON")
         console.error("Erro:", error);
         document.body.innerHTML = "<h2>Erro ao carregar o produto</h2>";
     });
+
+    function toggleButton(button) {
+    document.querySelectorAll('.btnTamanho').forEach(button => {
+        button.classList.remove('selected');
+    });
+    
+    button.classList.add('selected');
+    }

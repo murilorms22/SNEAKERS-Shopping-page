@@ -15,12 +15,12 @@ fetch('./produtos/produtos.json')
           <div class="titulos">
             <h1>${produto.nome}</h1>
             <h3>${produto.descricao}</h3>
-            <h3>${produto.cores} cores</h3>
+            <h3>${produto.cores} cor(es)</h3>
           </div>
           <div class="row infos">
-            <h2>R$${produto.preco}</h2>
+            <h2>R$${produto.preco.toFixed(2).replace('.', ',')}</h2>
           </div>
-          <a href="../pages/produtos/produto.html?id=${produto.id}&categoria=esportivo">
+          <a href="../pages/produtos/produto.html?id=${produto.id}">
             <button>Ver mais</button>
           </a>
         `;

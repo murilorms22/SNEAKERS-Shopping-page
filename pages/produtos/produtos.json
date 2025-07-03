@@ -5,7 +5,8 @@
       {
         "id": 1,
         "nome": "Adidas Courtblock",
-        "descricao": "Tênis casual branco",
+        "descricao": "Tênis casual",
+        "descricaoGrande": "Tênis casual Adidas Courtblock, ideal para o dia a dia. Com design clean e confortável, é perfeito para compor looks casuais.",
         "cores": 1,
         "preco": 299.90,
         "imagem": "../../assets/tenisShop/casual/1.webp",
@@ -16,7 +17,8 @@
       {
         "id": 2,
         "nome": "Adidas Park ST",
-        "descricao": "Tênis casual Adidas Branco",
+        "descricao": "Tênis casual",
+        "descricaoGrande": "Tênis casual Adidas Park ST, ideal para o dia a dia. Com design clean e confortável, é perfeito para compor looks casuais.",
         "cores": 1,
         "preco": 279.90,
         "imagem": "../../assets/tenisShop/casual/2.webp",
@@ -28,8 +30,9 @@
         "id": 3,
         "nome": "Adidas D Rose",
         "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Adidas D Rose, ideal para o dia a dia. Confortável e estiloso, perfeito para quem busca praticidade e estilo.",
         "cores": 2,
-        "preco": 300,
+        "preco": 979.90,
         "imagem": "../../assets/tenisShop/casual/3.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/3.webp"
@@ -39,8 +42,9 @@
         "id": 4,
         "nome": "Adidas Breaknet",
         "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Adidas Breaknet, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
         "cores": 2,
-        "preco": 300,
+        "preco": 409.90,
         "imagem": "../../assets/tenisShop/casual/4.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/4.webp"
@@ -50,8 +54,9 @@
         "id": 5,
         "nome": "Adidas Park Street",
         "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Adidas Park Street, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
         "cores": 2,
-        "preco": 300,
+        "preco": 669.90,
         "imagem": "../../assets/tenisShop/casual/5.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/5.webp"
@@ -59,10 +64,11 @@
       },
       {
         "id": 6,
-        "nome": "Adidas Courtblock Branco",
-        "descricao": "Tênis esportivo",
+        "nome": "Adidas Courtblock",
+        "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Adidas Courtblock Branco, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
         "cores": 2,
-        "preco": 300,
+        "preco": 299.90,
         "imagem": "../../assets/tenisShop/casual/6.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/6.webp"
@@ -71,9 +77,10 @@
       {
         "id": 7,
         "nome": "Mormaii Smash",
-        "descricao": "Tênis esportivo",
+        "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Mormaii Smash, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
         "cores": 2,
-        "preco": 300,
+        "preco": 849.90,
         "imagem": "../../assets/tenisShop/casual/7.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/7.webp"
@@ -81,10 +88,11 @@
       },
       {
         "id": 8,
-        "nome": "Nike Court Royale 2 Next Nature",
+        "nome": "Nike Court Royale 2",
         "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Nike Court Royale 2 Next Nature, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
         "cores": 2,
-        "preco": 300,
+        "preco": 519.90,
         "imagem": "../../assets/tenisShop/casual/8.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/8.webp"
@@ -92,10 +100,11 @@
       },
       {
         "id": 9,
-        "nome": "Adidas Breaknet Sleek Azul",
+        "nome": "Adidas Breaknet Sleek",
         "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Adidas Breaknet Sleek em tom azul, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
         "cores": 2,
-        "preco": 300,
+        "preco": 759.90,
         "imagem": "../../assets/tenisShop/casual/9.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/9.webp"
@@ -105,8 +114,9 @@
         "id": 10,
         "nome": "Adidas Park ST Cinza",
         "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Adidas Park ST em tom cinza, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
         "cores": 2,
-        "preco": 300,
+        "preco": 329.90,
         "imagem": "../../assets/tenisShop/casual/10.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/10.webp"
@@ -116,8 +126,9 @@
         "id": 11,
         "nome": "VOE Classic Casual",
         "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual VOE Classic, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
         "cores": 2,
-        "preco": 300,
+        "preco": 589.90,
         "imagem": "../../assets/tenisShop/casual/11.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/11.webp"
@@ -127,11 +138,24 @@
         "id": 12,
         "nome": "Adidas Park ST Bege",
         "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Adidas Park ST em tom bege, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
         "cores": 2,
-        "preco": 300,
+        "preco": 999.90,
         "imagem": "../../assets/tenisShop/casual/12.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/12.webp"
+        ]
+      },
+      {
+        "id": 35,
+        "nome": "Nike SB Malor",
+        "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual Nike SB Malor, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
+        "cores": 2,
+        "preco": 459.90,
+        "imagem": "../../assets/tenisShop/casual/13.webp",
+        "fotosLaterais": [
+          "../../assets/tenisShop/casual/13.webp"
         ]
       }
     ]
@@ -143,8 +167,10 @@
         "id": 13,
         "imagem": "../../assets/tenisShop/esporte/nike1.png",
         "nome": "Nike KD17 Roxo",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
+        "descricaoGrande": "Tênis de basquete Nike KD17, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 929.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/1.webp"
         ]
@@ -153,8 +179,10 @@
         "id": 14,
         "imagem": "../../assets/tenisShop/esporte/nike2.png",
         "nome": "Nike JA 2 \"Out My Body\"",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
+        "descricaoGrande": "Tênis de basquete Nike JA 2, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 879.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/2.webp"
         ]
@@ -162,9 +190,11 @@
       {
         "id": 15,
         "imagem": "../../assets/tenisShop/esporte/nike3.png",
-        "nome": "Nike Giannis Immortality 4",
+        "nome": "Giannis Immortality 4",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
+        "descricaoGrande": "Tênis de basquete Nike Giannis Immortality 4, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 319.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/3.webp"
         ]
@@ -173,8 +203,10 @@
         "id": 16,
         "imagem": "../../assets/tenisShop/esporte/nike4.png",
         "nome": "Nike Giannis Freak 6",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
+        "descricaoGrande": "Tênis de basquete Nike Giannis Freak 6, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 999.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/4.webp"
         ]
@@ -183,8 +215,10 @@
         "id": 17,
         "imagem": "../../assets/tenisShop/esporte/nike5.png",
         "nome": "Nike G.T. Cut 3",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
+        "descricaoGrande": "Tênis de basquete Nike G.T. Cut 3, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 819.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/5.webp"
         ]
@@ -193,18 +227,20 @@
         "id": 18,
         "imagem": "../../assets/tenisShop/esporte/nike6.png",
         "nome": "Nike Air Zoom GT Cut",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
-        "fotosLaterais": [
-          "../../assets/tenisShop/esporte/6.webp"
-        ]
+        "descricaoGrande": "Tênis de basquete Nike Air Zoom GT Cut, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 699.90,
+        "fotosLaterais": ["../../assets/tenisShop/esporte/6.webp"]
       },
       {
         "id": 19,
         "imagem": "../../assets/tenisShop/esporte/nike7.png",
         "nome": "Nike Sabrina 2",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
+        "descricaoGrande": "Tênis de basquete Nike Sabrina 2, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 849.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/7.webp"
         ]
@@ -213,8 +249,10 @@
         "id": 20,
         "imagem": "../../assets/tenisShop/esporte/nike8.png",
         "nome": "Nike Precision 7",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
+        "descricaoGrande": "Tênis de basquete Nike Precision 7, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 259.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/8.webp"
         ]
@@ -223,8 +261,10 @@
         "id": 21,
         "imagem": "../../assets/tenisShop/esporte/nike9.png",
         "nome": "Nike G.T. Jump 2",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
+        "descricaoGrande": "Tênis de basquete Nike G.T. Jump 2, projetado para máxima performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 789.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/9.webp"
         ]
@@ -233,8 +273,10 @@
         "id": 22,
         "imagem": "../../assets/tenisShop/esporte/nike10.png",
         "nome": "Nike KD16 Verde",
+        "cores": 1,
         "descricao": "Tênis esportivo",
-        "preco": 300,
+        "descricaoGrande": "Tênis de basquete Nike KD16, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 299.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/10.webp"
         ]
@@ -248,8 +290,10 @@
         "id": 23,
         "imagem": "../../assets/tenisShop/run/1.png",
         "nome": "Nike Zoom Fly",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis de corrida com tecnologia Zoom Fly, projetado para velocidade e conforto. Ideal para corredores que buscam performance em treinos e competições.",
+        "preco": 669.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/1.png"
         ]
@@ -258,8 +302,10 @@
         "id": 24,
         "imagem": "../../assets/tenisShop/run/2.png",
         "nome": "Nike Rival Fly 4",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis para corrida, ideal para treinos e competições, com tecnologia de amortecimento e suporte. Construído para oferecer conforto e performance em cada passada.",
+        "preco": 979.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/2.png"
         ]
@@ -268,8 +314,10 @@
         "id": 25,
         "imagem": "../../assets/tenisShop/run/3.png",
         "nome": "Nike ZoomX VaporFly 4",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis de alta performance para corredores, com tecnologia ZoomX para máxima eficiência e velocidade. Ideal para maratonas e treinos intensos.",
+        "preco": 889.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/3.png"
         ]
@@ -278,8 +326,10 @@
         "id": 26,
         "imagem": "../../assets/tenisShop/run/4.png",
         "nome": "Nike VaporFly 3",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis projetado para corredores de elite, com tecnologia de ponta para velocidade e conforto. Perfeito para competições e treinos longos.",
+        "preco": 599.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/4.png"
         ]
@@ -288,8 +338,10 @@
         "id": 27,
         "imagem": "../../assets/tenisShop/run/5.png",
         "nome": "Nike AirZoom Alphafly 3",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis de corrida com tecnologia AirZoom para máxima leveza e resposta. Ideal para corredores que buscam velocidade e conforto em longas distâncias.",
+        "preco": 409.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/5.png"
         ]
@@ -298,8 +350,10 @@
         "id": 28,
         "imagem": "../../assets/tenisShop/run/6.png",
         "nome": "Nike ReactX Wildhorse",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis de corrida versátil, ideal para trilhas e terrenos variados. Com tecnologia ReactX, oferece conforto e estabilidade em cada passo.",
+        "preco": 999.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/6.png"
         ]
@@ -308,8 +362,10 @@
         "id": 29,
         "imagem": "../../assets/tenisShop/run/7.png",
         "nome": "Nike Juniper Trail 3",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis projetado para trilhas, com tração superior e conforto. Ideal para corredores que buscam aventura em terrenos irregulares.",
+        "preco": 299.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/7.png"
         ]
@@ -318,8 +374,10 @@
         "id": 30,
         "imagem": "../../assets/tenisShop/run/8.png",
         "nome": "Nike Pegasus Trail 5",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis de corrida para trilhas, com amortecimento responsivo e tração confiável. Perfeito para aventuras ao ar livre e longas distâncias.",
+        "preco": 409.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/8.png"
         ]
@@ -328,8 +386,10 @@
         "id": 31,
         "imagem": "../../assets/tenisShop/run/9.png",
         "nome": "Nike Pegasus Plus",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis de corrida com tecnologia Pegasus Plus, oferecendo conforto e suporte para treinos diários. Ideal para corredores que buscam performance e durabilidade.",
+        "preco": 929.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/9.png"
         ]
@@ -338,8 +398,10 @@
         "id": 32,
         "imagem": "../../assets/tenisShop/run/10.png",
         "nome": "Nike Pegasus 93",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis de corrida clássico, com design atemporal e conforto excepcional. Ideal para corredores que apreciam estilo e performance.",
+        "preco": 669.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/10.png"
         ]
@@ -348,8 +410,10 @@
         "id": 33,
         "imagem": "../../assets/tenisShop/run/11.jpeg",
         "nome": "Nike ZoomX VaporFly 3",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis de corrida de alta performance, projetado para corredores que buscam velocidade e eficiência. Com tecnologia ZoomX, oferece leveza e resposta rápida.",
+        "preco": 999.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/11.png"
         ]
@@ -358,8 +422,10 @@
         "id": 34,
         "imagem": "../../assets/tenisShop/run/12.png",
         "nome": "Nike Journey Run",
+        "cores": 1,
         "descricao": "Tênis para corrida",
-        "preco": 300,
+        "descricaoGrande": "Tênis de corrida projetado para conforto e suporte em longas distâncias. Ideal para corredores que buscam durabilidade e performance em cada passo.",
+        "preco": 589.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/12.png"
         ]
