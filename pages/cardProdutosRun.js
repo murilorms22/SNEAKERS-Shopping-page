@@ -1,3 +1,29 @@
+let produtos = [];
+
+function mostrarProdutos(lista) {
+  const container = document.getElementById('produtos');
+  container.innerHTML = '';
+
+  lista.forEach(produto => {
+    container.innerHTML += `
+    <div class="cardProduto">
+    <img src="${produto.imagem}" alt="${produto.nome}">
+          <div class="titulos">
+            <h1>${produto.nome}</h1>
+            <h3>${produto.descricao}</h3>
+            <h3>${produto.cores} cor(es)</h3>
+          </div>
+          <div class="row infos">
+            <h2>R$${produto.preco.toFixed(2).replace('.', ',')}</h2>
+          </div>
+          <a href="../pages/produtos/produto.html?id=${produto.id}">
+            <button>Ver mais</button>
+          </a>
+    </div>
+    `
+  })
+}
+
 fetch('./produtos/produtos.json')
   .then(response => response.json())
   .then(categorias => {
