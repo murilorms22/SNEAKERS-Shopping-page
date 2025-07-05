@@ -46,3 +46,32 @@ fetch("produtos.JSON")
     
     button.classList.add('selected');
     }
+
+//mudando de assunto, mas mantendo o mesmo script
+
+const botaoComprar = document.getElementById('btnComprar');
+botaoComprar.addEventListener("click", () => {
+    adicionarAoCarrinho(idProduto);
+})
+
+function adicionarAoCarrinho(idProduto) {
+    let carrinhoSalvo = localStorage.getItem("carrinho");
+    let carrinho;
+
+    if(carrinhoSalvo){
+        carrinho = JSON.parse(carrinhoSalvo);
+    } else {
+        carrinho = [];
+    }
+
+    const existente = carrinho.find(item => item.id == idProduto);
+
+    if(existente){
+        existente.quantidade += 1;
+    } else {
+        carrinho.push({ id: idProduto, quantidade: 1 });
+    }
+
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    alert("Produto adicionado ao carrinho com sucesso!");
+}
