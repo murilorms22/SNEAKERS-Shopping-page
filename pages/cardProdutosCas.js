@@ -1,16 +1,13 @@
-fetch('./produtos/produtos.json')
-  .then(response => response.json())
-  .then(categorias => {
-    const container = document.getElementById('produtos');
+let produtos = [];
 
-    const categoriaCasual = categorias.find(cat => cat.categoria === 'casual');
+function mostrarProdutos(lista) {
+  const container = document.getElementById('produtos');
+  container.innerHTML = '';
 
-    if (categoriaCasual && categoriaCasual.produtos) {
-      categoriaCasual.produtos.forEach(produto => {
-        const card = document.createElement('div');
-        card.className = 'cardProduto';
-
-        card.innerHTML = `
+  lista.forEach(produto => {
+    const card = document.createElement('div');
+    card.className = 'cardProduto';
+    card.innerHTML = `
           <img src="${produto.imagem}" alt="${produto.nome}">
           <div class="titulos">
             <h1>${produto.nome}</h1>
@@ -24,13 +21,42 @@ fetch('./produtos/produtos.json')
             <button>Ver mais</button>
           </a>
         `;
-
         container.appendChild(card);
-      });
+  })
+}
+
+function classificacao() {
+  const select = document.getElementById('selectClassificar');
+
+  select.addEventListener('change', () => {
+    const valorSelecionado = select.value;
+    let novaLista = [...produtos];
+
+    if(valorSelecionado == '2'){
+      novaLista.sort((a, b) => b.preco - a.preco);
+    } else if (valorSelecionado == '3'){ 
+      novaLista.sort((a, b) => a.preco - b.preco);
+    }
+
+    mostrarProdutos(novaLista);
+
+  })
+}
+
+fetch('./produtos/produtos.json')
+  .then(response => response.json())
+  .then(categorias => {
+    const categoriaCasual = categorias.find(cat => cat.categoria === 'casual');
+
+    if(categoriaCasual && categoriaCasual.produtos){
+      produtos = categoriaCasual.produtos;
+      mostrarProdutos(produtos);
+      classificacao();
     } else {
-      container.innerHTML = '<p>Nenhum produto encontrado.</p>';
+      document.getElementById('produtos').innerHTML = '<p>Nenhum produto foi encontrado.</p>'
     }
   })
+
   .catch(error => {
     console.error("Erro ao carregar os produtos:", error);
-  });
+  })
