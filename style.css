@@ -478,14 +478,14 @@ button {
   border-radius: 5px;
 }
 
-#textosShopPage .tamanhos {
+#textosShopPage #tamanhos {
   display: flex;
   flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-#textosShopPage .tamanhos button.selected {
+#textosShopPage #tamanhos button.selected {
   background-color: var(--not-black);
   color: white;
   border: none;
@@ -557,4 +557,112 @@ a button.btnVerMais {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
+}
+
+#carrinhoContainer {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+} 
+
+.carrinhoContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.produtoCarrinho {
+  width: 930px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(234, 234, 234, 0.766);
+  color: var(--not-black);
+  border-radius: 5px;
+}
+
+.produtoCarrinho img {
+  width: 150px;
+  height: 150px;
+}
+
+.infoEsquerda {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.infoEsquerda div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+#listaCarrinho {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.infoTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5px;
+  font-size: 24px;
+}
+
+.infosFinais {
+  width: 50%;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(234, 234, 234, 0.766);
+  color: var(--not-black);
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.infosFinais h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.infosFinais button {
+  width: 100%;
+  height: 50px;
+  background-color: var(--not-black);
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.infosFinais button:hover {
+  background-color: rgba(0, 0, 0, 0.88);
+  transform: scale(1.01);
+}
+
+#qtdSelect {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  padding: 0 10px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
 }

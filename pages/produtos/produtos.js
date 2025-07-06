@@ -47,7 +47,7 @@ fetch("produtos.JSON")
     button.classList.add('selected');
     }
 
-//mudando de assunto, mas mantendo o mesmo script
+//logica para carrinho
 
 const botaoComprar = document.getElementById('btnComprar');
 botaoComprar.addEventListener("click", () => {
@@ -56,7 +56,13 @@ botaoComprar.addEventListener("click", () => {
 
 function adicionarAoCarrinho(idProduto) {
     let carrinhoSalvo = localStorage.getItem("carrinho");
+    let tamanhoSelecionado = document.querySelector('.btnTamanho.selected');
     let carrinho;
+
+    if(!tamanhoSelecionado) {
+        alert('Por favor, selecione um tamanho para seu tênis.');
+        return;
+    }
 
     if(carrinhoSalvo){
         carrinho = JSON.parse(carrinhoSalvo);
@@ -64,12 +70,13 @@ function adicionarAoCarrinho(idProduto) {
         carrinho = [];
     }
 
-    const existente = carrinho.find(item => item.id == idProduto);
+
+    const existente = carrinho.find(item => item.id == idProduto && item.tamanho == tamanhoSelecionado.value);
 
     if(existente){
         existente.quantidade += 1;
     } else {
-        carrinho.push({ id: idProduto, quantidade: 1 });
+        carrinho.push({ id: idProduto, quantidade: 1, tamanho: tamanhoSelecionado.value });
     }
 
     localStorage.setItem("carrinho", JSON.stringify(carrinho));

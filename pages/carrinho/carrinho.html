@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <title>Carrinho</title>
+</head>
+<body id="bodyShopping">
+        <header id="main-header">
+    <div id="headerContent">
+        <div>
+            <a href="../../index.html"><img src="../../assets/icons/white-logo.png" alt="logo do site"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../esporte.html">Esporte</a></li>
+                <li><a href="../casual.html">Casual</a></li>
+                <li><a href="../run.html">Corrida</a></li>
+            </ul>
+        </nav>
+        <div id="iconsHeader">
+            <img src="../../assets/icons/lupa.png" alt="carrinho de compras">
+            <img src="../../assets/icons/cart.png" alt="carrinho de compras">
+            <a href="../../pages/account.html"><img src="../../assets/icons/account.png" alt="conta usuario"></a>
+        </div>
+    </div>
+</header>
+<div id="carrinhoContainer" class="mtop">
+    <h1>Meu carrinho</h1>
+    <div class="carrinhoContent">
+                <div id="listaCarrinho"></div>  
+            
+            <div class="infosFinais">
+                <h1>Resumo do pedido</h1>
+                <div class="infoTotal">
+                    <div>
+                        <p id="qtdProd">(qtd) produtos</p>
+                        <p>Preço original</p>
+                        <p>Taxa de entrega</p>
+                        <p>Descontos</p>
+                        <br>
+                        <p>Total</p>
+                    </div>
+                    <div>
+                        <p id="qtdProdutos">1</p>
+                        <p id="precoOriginal">200,00</p>
+                        <p id="taxaEntrega">0,00</p>
+                        <p id="descontos">0,00</p>
+                        <br>
+                        <p>200,00</p>
+                    </div>
+                </div>
+                <button class="btnFinalizar">Finalizar Compra</button>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
