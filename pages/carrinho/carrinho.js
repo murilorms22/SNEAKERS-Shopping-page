@@ -4,6 +4,11 @@ function mostrarProdutos(carrinho) {
   const container = document.getElementById("listaCarrinho");
   container.innerHTML = "";
 
+  if(carrinho.length === 0) {
+    container.innerHTML = "<p>Seu carrinho está vazio</p>";
+  return;
+}
+
   carrinho.forEach((produto) => {
     const card = document.createElement("div");
     card.className = "produtoCarrinho";
@@ -20,9 +25,9 @@ function mostrarProdutos(carrinho) {
                             </div>
                         </div>
                         <div class="produtoInfo">
-                            <p class="btnRemover" data-id="${produto.id}">X</p>
+                            <p class="btnRemover" data-id="${produto.id}" data-tamanho="${produto.tamanho}">X</p>
                             <h3>Quantidade</h3>
-                            <select name="qtd" id="qtdSelect">
+                            <select name="qtd" class="qtdSelect" data-id="${produto.id}" data-tamanho="${produto.tamanho}">
                                 <option value="1" ${
                                   produto.quantidade == 1 ? "selected" : ""
                                 }>1</option>
@@ -39,9 +44,34 @@ function mostrarProdutos(carrinho) {
 
     card.querySelector(".btnRemover").addEventListener("click", function () {
       const idRemover = this.getAttribute("data-id");
-      removerCarrinho(idRemover);
+      const tamanhoRemover = this.getAttribute("data-tamanho");
+      removerCarrinho(idRemover, tamanhoRemover);
     });
+    
+    card.querySelectorAll(".qtdSelect").forEach(select => {
+      select.addEventListener("change", function () {
+        const novaQuantidade = parseInt(this.value);
+        const produtoId = this.getAttribute("data-id");
+        const produtoTamanho = this.getAttribute("data-tamanho");
+
+        const item = carrinho.find(p => p.id == produtoId && p.tamanho == produtoTamanho);
+
+        if (!item) {
+          console.error("Produto não encontrado no carrinho");
+          return;
+        }
+
+        if (item) {
+      item.quantidade = novaQuantidade;
+
+      const carrinhoAtualizado = carrinho.map(p => ({ id: p.id, quantidade: p.quantidade, tamanho: p.tamanho }));
+
+      localStorage.setItem("carrinho", JSON.stringify(carrinhoAtualizado));
+      window.location.reload(); 
+    }
   });
+});
+});
 }
 
 let carrinhoSalvo = localStorage.getItem("carrinho");
@@ -104,16 +134,21 @@ fetch("../produtos/produtos.json")
 
 function finalizarCompra() {}
 
-function removerDoCarrinho(id) {
-  let carrinho;
+function removerCarrinho(id, tamanho) {
 
-  if (carrinhoSalvo) {
-    carrinho = JSON.parse(carrinhoSalvo);
-  } else {
-    carrinho = [];
-  }
-  carrinho = carrinho.filter((item) => item.id != id);
+let carrinhoSalvo = localStorage.getItem("carrinho");
+let carrinho;
+
+if (carrinhoSalvo) {
+  carrinho = JSON.parse(carrinhoSalvo);
+} else {
+  carrinho = [];
+}
+
+  carrinho = carrinho.filter(item => !(item.id == id && item.tamanho == tamanho));
 
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
   location.reload();
 }
+

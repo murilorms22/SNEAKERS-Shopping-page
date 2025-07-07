@@ -70,10 +70,14 @@ function adicionarAoCarrinho(idProduto) {
         carrinho = [];
     }
 
-
     const existente = carrinho.find(item => item.id == idProduto && item.tamanho == tamanhoSelecionado.value);
 
+
     if(existente){
+        if (existente.quantidade == 3) {
+            alert("O máximo de produtos por tamanho é 3.");
+            return;
+        }
         existente.quantidade += 1;
     } else {
         carrinho.push({ id: idProduto, quantidade: 1, tamanho: tamanhoSelecionado.value });

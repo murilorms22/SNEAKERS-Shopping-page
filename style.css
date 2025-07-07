@@ -657,7 +657,11 @@ a button.btnVerMais {
   transform: scale(1.01);
 }
 
-#qtdSelect {
+#resumoDireita {
+  text-align: right;
+}
+
+.qtdSelect {
   width: 100px;
   height: 40px;
   border-radius: 5px;
@@ -672,8 +676,8 @@ a button.btnVerMais {
   font-weight: 500;
   color: var(--not-black);
   font-size: 25px;
-  position: absolute;
-  right: 840px;
-  transform: translateY(-130%);
+  position: relative;
+  right: -90px;
+  transform: translateY(-90%);
   cursor: pointer;
 }
