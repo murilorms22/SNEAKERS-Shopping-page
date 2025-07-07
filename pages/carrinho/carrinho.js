@@ -13,7 +13,7 @@ function mostrarProdutos(carrinho) {
     const card = document.createElement("div");
     card.className = "produtoCarrinho";
     card.innerHTML = `
-                        <div class="infoEsquerda">
+                        <a href="../produtos/produto.html?id=${produto.id}"><div class="infoEsquerda">
                             <img src="${produto.imagem}" alt="${produto.nome}" >
                             <div>
                                 <h2>${produto.nome}</h2>
@@ -23,10 +23,10 @@ function mostrarProdutos(carrinho) {
                                   .replace(".", ",")}</p>
                                 <p>Tamanho: ${produto.tamanho}</p>
                             </div>
-                        </div>
+                        </div></a>
                         <div class="produtoInfo">
-                            <p class="btnRemover" data-id="${produto.id}" data-tamanho="${produto.tamanho}">X</p>
-                            <h3>Quantidade</h3>
+                        <p class="btnRemover" data-id="${produto.id}" data-tamanho="${produto.tamanho}">X</p>
+                        <h3>Quantidade</h3>
                             <select name="qtd" class="qtdSelect" data-id="${produto.id}" data-tamanho="${produto.tamanho}">
                                 <option value="1" ${
                                   produto.quantidade == 1 ? "selected" : ""
@@ -43,9 +43,11 @@ function mostrarProdutos(carrinho) {
     container.appendChild(card);
 
     card.querySelector(".btnRemover").addEventListener("click", function () {
-      const idRemover = this.getAttribute("data-id");
-      const tamanhoRemover = this.getAttribute("data-tamanho");
-      removerCarrinho(idRemover, tamanhoRemover);
+        if(confirm("Tem certeza que deseja remover este item do carrinho?")){
+                const idRemover = this.getAttribute("data-id");
+                const tamanhoRemover = this.getAttribute("data-tamanho");
+                removerCarrinho(idRemover, tamanhoRemover);
+        }
     });
     
     card.querySelectorAll(".qtdSelect").forEach(select => {
@@ -135,8 +137,8 @@ fetch("../produtos/produtos.json")
 function finalizarCompra() {}
 
 function removerCarrinho(id, tamanho) {
-
 let carrinhoSalvo = localStorage.getItem("carrinho");
+
 let carrinho;
 
 if (carrinhoSalvo) {
