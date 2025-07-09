@@ -12,20 +12,53 @@ botoes.forEach(botao => {
     switch (id) {
       case "info":
         conteudo = `
-          <h1>Minhas Informações</h1>
-          <p>Nome: Murilo Silveira</p>
-          <p>Email: murilo@email.com</p>
-          <p>Telefone: (53) 99999-9999</p>
+          <h1>Minha conta</h1>
+          <div class="infoPai">
+            <div class="info">
+              <h5>Endereço de e-mail</h5>
+              <span>murilosilveira@ifsul.com</span>
+              <p class="mudar">Mudar e-mail</p>
+            </div>
+            <div class="info">
+              <h5>Senha</h5>
+              <span>********</span>
+              <p class="mudar">Mudar a senha</p>
+            </div>
+            <div class="info">
+              <h5>Telefone</h5>
+              <span>(51) 99999-9999</span>
+              <p class="mudar">Mudar o telefone</p>
+            </div>
+            <div class="info">
+              <h5>Endereço</h5>
+              <span>Rua Exemplo, 123, Bairro, Cidade, Estado, 12345-678</span>
+              <p class="mudar">Mudar o endereço</p>
+            </div>
+            <div class="info">
+              <h5>Data de nascimento</h5>
+              <span>01/01/2000</span>
+            </div>
+            <div class="info">
+              <h5>Data de criação da conta</h5>
+              <span>01/01/2023</span>
+            </div>
+          </div>
+          <div class="info">
+            <button class="excluir">Excluir conta</button>
+          </div>
+        </div>
         `;
         break;
 
       case "historico":
         conteudo = `
-          <h1>Histórico de Compras</h1>
-          <ul>
-            <li>Compra #001 - Tênis Casual - R$199,00</li>
-            <li>Compra #002 - Camiseta Estampa - R$89,90</li>
-          </ul>
+          <h1>Histórico de compras</h1>
+            <div class="infoPai">
+                <div class="info">
+                <p>Você ainda não possui compras registradas.</p>
+                <button class="voltarLoja">Voltar para loja</button>
+                </div>
+            </div>
         `;
         break;
 
