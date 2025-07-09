@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SNEAKERS | Social</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <script src="../script.js"></script>
-</head>
-<header class="esporte">
+  </head>
+  <header class="esporte">
     <div id="headerContent">
-        <div>
-            <a href="../index.html"><img src="../assets/icons/white-logo.png" alt="logo do site"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../pages/esporte.html">Esporte</a></li>
-                <li><a href="../pages/casual.html">Casual</a></li>
-                <li><a href="../pages/run.html">Corrida</a></li>
-            </ul>
-        </nav>
-        <div id="iconsHeader">
-            <img src="../assets/icons/lupa.png" alt="carrinho de compras">
-            <img src="../assets/icons/cart.png" alt="carrinho de compras">
-            <img src="../assets/icons/account.png" alt="conta usuario">
-        </div>
+      <div>
+        <a href="../index.html"
+          ><img src="../assets/icons/white-logo.png" alt="logo do site"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../pages/esporte.html">Esporte</a></li>
+          <li><a href="../pages/casual.html">Casual</a></li>
+          <li><a href="../pages/run.html">Corrida</a></li>
+        </ul>
+      </nav>
+      <div id="iconsHeader">
+        <img src="../assets/icons/lupa.png" alt="carrinho de compras" />
+        <a href="./carrinho/carrinho.html"
+          ><img src="../assets/icons/cart.png" alt="carrinho de compras"
+        /></a>
+        <a href="./account.html"
+          ><img src="../assets/icons/account.png" alt="conta usuario"
+        /></a>
+      </div>
     </div>
-</header>
-<body id="bodyShopping">
+  </header>
+  <body id="bodyShopping">
     <div id="sideBar">
-        <h1>Estilo</h1>
-        <div class="filtros">
-            <p>Basquete</p>
-            <input type="checkbox">
-        </div>
-        <div class="filtros">
-            <p>Vôlei</p>
-            <input type="checkbox">
-        </div><div class="filtros">
-            <p>Futsal</p>
-            <input type="checkbox">
-        </div><div class="filtros">
-            <p>Handebol</p>
-            <input type="checkbox">
-        </div><h1>Modelo</h1>
-        <div class="filtros">
-            <p>Masculino</p>
-            <input type="checkbox">
-        </div>
-        <div class="filtros">
-            <p>Feminino</p>
-            <input type="checkbox">
-        </div><div class="filtros">
-            <p>Unissex</p>
-            <input type="checkbox">
-        </div><div class="filtros">
-            <p>Infantil</p>
-            <input type="checkbox">
-        </div>
+      <h1>Estilo</h1>
+      <div class="filtros">
+        <p>Basquete</p>
+        <input type="checkbox" />
+      </div>
+      <div class="filtros">
+        <p>Vôlei</p>
+        <input type="checkbox" />
+      </div>
+      <div class="filtros">
+        <p>Futsal</p>
+        <input type="checkbox" />
+      </div>
+      <div class="filtros">
+        <p>Handebol</p>
+        <input type="checkbox" />
+      </div>
+      <h1>Modelo</h1>
+      <div class="filtros">
+        <p>Masculino</p>
+        <input type="checkbox" />
+      </div>
+      <div class="filtros">
+        <p>Feminino</p>
+        <input type="checkbox" />
+      </div>
+      <div class="filtros">
+        <p>Unissex</p>
+        <input type="checkbox" />
+      </div>
+      <div class="filtros">
+        <p>Infantil</p>
+        <input type="checkbox" />
+      </div>
     </div>
     <div id="containerShopping">
-        <div>
-            <p>Classificar por: <select name="selectClassificar" id="selectClassificar">
-                <option value="1">Selecione</option>
-                <option value="3">Preço crescente</option>
-                <option value="2">Preço decrescente</option>
-            </select></p>
-        </div>
+      <div>
+        <p>
+          Classificar por:
+          <select name="selectClassificar" id="selectClassificar">
+            <option value="1">Selecione</option>
+            <option value="3">Preço crescente</option>
+            <option value="2">Preço decrescente</option>
+          </select>
+        </p>
+      </div>
 
-        <div id="produtos" class="mtop"></div>
-            
+      <div id="produtos" class="mtop"></div>
     </div>
 
-        <script src="cardProdutosRun.js"></script>
-</body>
+    <script src="cardProdutosRun.js"></script>
+  </body>
 </html>
