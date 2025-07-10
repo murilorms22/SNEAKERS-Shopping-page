@@ -154,3 +154,11 @@ if (carrinhoSalvo) {
   location.reload();
 }
 
+document.querySelector("#btnFinalizarCompra").addEventListener("click", function () {
+    document.getElementById("sobretela").classList.remove("sobretela-hide");
+
+    setTimeout(() => {
+        localStorage.removeItem("carrinho");
+        location.reload();
+    }, 3000);
+});
