@@ -585,7 +585,7 @@ a button.btnVerMais {
 
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    
+
   transition: 0.3s ease;
 }
 
@@ -827,7 +827,7 @@ button.voltarLoja {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 3px solid rgb(255,255,255,.5);
+  border: 3px solid rgb(255, 255, 255, 0.5);
   border-top-color: transparent;
   animation: rot1 1.2s linear infinite;
 }
@@ -836,4 +836,52 @@ button.voltarLoja {
   to {
     transform: rotate(360deg);
   }
+}
+
+#finalContainer  {
+  width: 1440px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  margin-inline: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 150px;
+}
+
+.finalCard {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 700px;
+  height: 700px;
+  padding-block: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--not-black);
+  border-radius: 10px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+p.sucesso {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p.secao {
+  font-size: 20px;
+  text-align: center;
+}
+
+span.bold {
+  font-weight: 700;
+}
+
+span.linkFinal {
+  color: rgb(136, 121, 223);
+  font-weight: 700;
+  text-decoration: none;
 }

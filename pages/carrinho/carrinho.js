@@ -166,6 +166,12 @@ document.querySelector("#btnFinalizarCompra").addEventListener("click", function
       } else {
         carrinhoAtual = [];
       }
+      
+      if (carrinhoAtual.length == 0) {
+        alert("Seu carrinho está vazio. Adicione produtos antes de finalizar a compra.");
+        location.reload();
+        return;
+      }
 
       const recentes = localStorage.getItem("comprasRecentes");
       let comprasRecentes;
@@ -176,10 +182,14 @@ document.querySelector("#btnFinalizarCompra").addEventListener("click", function
         comprasRecentes = [];
       }
 
+      let compraAtual = JSON.parse(localStorage.getItem("carrinhoAtual"));
+
       comprasRecentes.push(carrinhoAtual);
+      compraAtual = [carrinhoAtual];
+
       localStorage.setItem("comprasRecentes", JSON.stringify(comprasRecentes));
-
-
+      localStorage.setItem("compraAtual", JSON.stringify(compraAtual));
+      
         localStorage.removeItem("carrinho");
         location.href = "./finalCompra.html";
     }, 3000);
