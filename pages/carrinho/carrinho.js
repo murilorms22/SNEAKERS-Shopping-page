@@ -158,7 +158,30 @@ document.querySelector("#btnFinalizarCompra").addEventListener("click", function
     document.getElementById("sobretela").classList.remove("sobretela-hide");
 
     setTimeout(() => {
+      const carrinhoSalvo = localStorage.getItem("carrinho");
+      let carrinhoAtual;
+
+      if(carrinhoSalvo) {
+        carrinhoAtual = JSON.parse(carrinhoSalvo);
+      } else {
+        carrinhoAtual = [];
+      }
+
+      const recentes = localStorage.getItem("comprasRecentes");
+      let comprasRecentes;
+
+      if (recentes){
+        comprasRecentes = JSON.parse(recentes);
+      } else {
+        comprasRecentes = [];
+      }
+
+      comprasRecentes.push(carrinhoAtual);
+      localStorage.setItem("comprasRecentes", JSON.stringify(comprasRecentes));
+
+
         localStorage.removeItem("carrinho");
-        location.reload();
+        location.href = "./finalCompra.html";
     }, 3000);
+    
 });
