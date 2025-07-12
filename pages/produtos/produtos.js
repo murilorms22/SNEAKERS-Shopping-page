@@ -54,10 +54,11 @@ botaoComprar.addEventListener("click", () => {
     adicionarAoCarrinho(idProduto);
 })
 
-function adicionarAoCarrinho(idProduto) {
+function adicionarAoCarrinho(idProduto) { 
     let carrinhoSalvo = localStorage.getItem("carrinho");
-    let tamanhoSelecionado = document.querySelector('.btnTamanho.selected');
     let carrinho;
+
+    let tamanhoSelecionado = document.querySelector('.btnTamanho.selected');
 
     if(!tamanhoSelecionado) {
         alert('Por favor, selecione um tamanho para seu tênis.');
@@ -71,7 +72,6 @@ function adicionarAoCarrinho(idProduto) {
     }
 
     const existente = carrinho.find(item => item.id == idProduto && item.tamanho == tamanhoSelecionado.value);
-
 
     if(existente){
         if (existente.quantidade == 3) {
