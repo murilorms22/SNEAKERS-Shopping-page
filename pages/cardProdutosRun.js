@@ -43,6 +43,44 @@ function classificacao() {
   })
 }
 
+function aplicarFiltros() {
+  const filtroEstilo = document.getElementById('filtroEstilo').value;
+  const filtroGenero = document.getElementById('filtroModelo').value;
+
+  let listaFiltrada = [...produtos];
+
+  if (filtroEstilo === '2') {
+    listaFiltrada = listaFiltrada.filter(p => p.terreno?.toLowerCase() === 'pista');
+  } else if (filtroEstilo === '3') {
+    listaFiltrada = listaFiltrada.filter(p => p.terreno?.toLowerCase() === 'trilha');
+  }
+
+  if (filtroGenero === '2') {
+    listaFiltrada = listaFiltrada.filter(p => p.genero?.toLowerCase() === 'masculino');
+  } else if (filtroGenero === '3') {
+    listaFiltrada = listaFiltrada.filter(p => p.genero?.toLowerCase() === 'feminino');
+  }
+
+  mostrarProdutos(listaFiltrada);
+}
+
+document.getElementById('filtroEstilo').addEventListener('change', aplicarFiltros);
+document.getElementById('filtroModelo').addEventListener('change', aplicarFiltros);
+
+function ativarBusca() {
+  const campoBusca = document.getElementById('campoBusca');
+
+  campoBusca.addEventListener('input', () => {
+    const termo = campoBusca.value.toLowerCase();
+
+    const filtrados = produtos.filter(produto =>
+      produto.nome.toLowerCase().includes(termo)
+    );
+
+    mostrarProdutos(filtrados);
+  });
+}
+
 fetch('./produtos/produtos.json')
   .then(response => response.json())
   .then(categorias => {
@@ -52,6 +90,7 @@ fetch('./produtos/produtos.json')
       produtos = categoriaCorrida.produtos;
       mostrarProdutos(produtos);
       classificacao();
+      ativarBusca();
     } else {
       document.getElementById('produtos').innerHTML = '<p>Nenhum produto foi encontrado.</p>'
     }

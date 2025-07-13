@@ -35,69 +35,31 @@
     </div>
   </header>
   <body id="bodyShopping">
-    <div id="sideBar">
-      <h1>Estilo</h1>
-      <div class="filtros">
-        <p>Basquete</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Vôlei</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Futsal</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Handebol</p>
-        <input type="checkbox" />
-      </div>
-      <h1>Modelo</h1>
-      <div class="filtros">
-        <p>Masculino</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Feminino</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Unissex</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Infantil</p>
-        <input type="checkbox" />
-      </div>
-    </div>
     <div id="containerShopping">
       <div id="containerHeaderShopping">
-        <div>
+        <div id="esquerda">
         <p>
           Classificar por:
+        </p>
           <select name="selectClassificar" id="selectClassificar">
             <option value="1">Relevância</option>
             <option value="3">Preço crescente</option>
             <option value="2">Preço decrescente</option>
           </select>
-        </p>
         <select name="filtroEstilo" id="filtroEstilo">
           <option value="1">Estilo</option>
           <option value="2">Basquete</option>
           <option value="3">Vôlei</option>
-          <option value="4">Futsal</option>
-          <option value="5">Handebol</option>
         </select>
         <select name="filtroModelo" id="filtroModelo">
-          <option value="1">Modelo</option>
+          <option value="1">Gênero</option>
           <option value="2">Masculino</option>
           <option value="3">Feminino</option>
-          <option value="4">Unissex</option>
-          <option value="5">Infantil</option>  
+        </select> 
         </div>
-        
-        <input type="text" id="campoBusca" placeholder="Buscar produtos..." />
+        <div id="direita">
+          <input type="text" id="campoBusca" placeholder="Buscar produtos..." />
+        </div>
       </div>
 
       <div id="produtos" class="mtop"></div>

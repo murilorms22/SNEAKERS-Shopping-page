@@ -12,7 +12,9 @@
         "imagem": "../../assets/tenisShop/casual/1.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/1.webp"
-        ]
+        ],
+        "modelo": "Couro",
+        "genero": "Masculino"
       },
       {
         "id": 2,
@@ -24,7 +26,9 @@
         "imagem": "../../assets/tenisShop/casual/2.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/2.webp"
-        ]
+        ],
+        "modelo": "Camurça",
+        "genero": "Masculino"
       },
       {
         "id": 3,
@@ -36,7 +40,9 @@
         "imagem": "../../assets/tenisShop/casual/3.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/3.webp"
-        ]
+        ],
+        "modelo": "Couro",
+        "genero": "Masculino"
       },
       {
         "id": 4,
@@ -48,7 +54,9 @@
         "imagem": "../../assets/tenisShop/casual/4.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/4.webp"
-        ]
+        ],
+        "modelo": "Couro",
+        "genero": "Masculino"
       },
       {
         "id": 5,
@@ -60,7 +68,9 @@
         "imagem": "../../assets/tenisShop/casual/5.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/5.webp"
-        ]
+        ],
+        "modelo": "Couro",
+        "genero": "Masculino"
       },
       {
         "id": 6,
@@ -72,7 +82,9 @@
         "imagem": "../../assets/tenisShop/casual/6.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/6.webp"
-        ]
+        ],
+        "modelo": "Couro",
+        "genero": "Masculino"
       },
       {
         "id": 7,
@@ -84,7 +96,9 @@
         "imagem": "../../assets/tenisShop/casual/7.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/7.webp"
-        ]
+        ],
+        "modelo": "Couro",
+        "genero": "Masculino"
       },
       {
         "id": 8,
@@ -96,7 +110,9 @@
         "imagem": "../../assets/tenisShop/casual/8.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/8.webp"
-        ]
+        ],
+        "modelo": "Couro",
+        "genero": "Masculino"
       },
       {
         "id": 9,
@@ -108,7 +124,9 @@
         "imagem": "../../assets/tenisShop/casual/9.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/9.webp"
-        ]
+        ],
+        "modelo": "Camurça",
+        "genero": "Masculino"
       },
       {
         "id": 10,
@@ -120,7 +138,9 @@
         "imagem": "../../assets/tenisShop/casual/10.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/10.webp"
-        ]
+        ],
+        "modelo": "Camurça",
+        "genero": "Masculino"
       },
       {
         "id": 11,
@@ -132,7 +152,9 @@
         "imagem": "../../assets/tenisShop/casual/11.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/11.webp"
-        ]
+        ],
+        "modelo": "Camurça",
+        "genero": "Masculino"
       },
       {
         "id": 12,
@@ -144,7 +166,9 @@
         "imagem": "../../assets/tenisShop/casual/12.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/12.webp"
-        ]
+        ],
+        "modelo": "Camurça",
+        "genero": "Masculino"
       },
       {
         "id": 35,
@@ -156,7 +180,9 @@
         "imagem": "../../assets/tenisShop/casual/13.webp",
         "fotosLaterais": [
           "../../assets/tenisShop/casual/13.webp"
-        ]
+        ],
+        "modelo": "Camurça",
+        "genero": "Masculino"
       }
     ]
   },
@@ -173,7 +199,9 @@
         "preco": 929.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/1.webp"
-        ]
+        ],
+        "estilo": "Basquete",
+        "genero": "Masculino"
       },
       {
         "id": 14,
@@ -185,7 +213,9 @@
         "preco": 879.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/2.webp"
-        ]
+        ],
+        "estilo": "Basquete",
+        "genero": "Masculino"
       },
       {
         "id": 15,
@@ -197,7 +227,9 @@
         "preco": 319.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/3.webp"
-        ]
+        ],
+        "estilo": "Basquete",
+        "genero": "Masculino"
       },
       {
         "id": 16,
@@ -209,7 +241,9 @@
         "preco": 999.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/4.webp"
-        ]
+        ],
+        "estilo": "Basquete",
+        "genero": "Masculino"
       },
       {
         "id": 17,
@@ -221,7 +255,9 @@
         "preco": 819.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/5.webp"
-        ]
+        ],
+        "estilo": "Voleibol",
+        "genero": "Feminino"
       },
       {
         "id": 18,
@@ -231,7 +267,8 @@
         "descricao": "Tênis esportivo",
         "descricaoGrande": "Tênis de basquete Nike Air Zoom GT Cut, projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
         "preco": 699.90,
-        "fotosLaterais": ["../../assets/tenisShop/esporte/6.webp"]
+        "fotosLaterais": ["../../assets/tenisShop/esporte/6.webp"],
+        "estilo": "Voleibol"
       },
       {
         "id": 19,
@@ -243,7 +280,9 @@
         "preco": 849.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/7.webp"
-        ]
+        ],
+        "estilo": "Basquete",
+        "genero": "Feminino"
       },
       {
         "id": 20,
@@ -255,7 +294,9 @@
         "preco": 259.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/8.webp"
-        ]
+        ],
+        "estilo": "Voleibol",
+        "genero": "Masculino"
       },
       {
         "id": 21,
@@ -267,7 +308,9 @@
         "preco": 789.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/9.webp"
-        ]
+        ],
+        "estilo": "Voleibol",
+        "genero": "Feminino"
       },
       {
         "id": 22,
@@ -279,7 +322,9 @@
         "preco": 299.90,
         "fotosLaterais": [
           "../../assets/tenisShop/esporte/10.webp"
-        ]
+        ],
+        "estilo": "Basquete",
+        "genero": "Feminino"
       }
     ]
   },
@@ -296,7 +341,9 @@
         "preco": 669.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/1.png"
-        ]
+        ],
+        "terreno": "Pista",
+        "genero": "Masculino"
       },
       {
         "id": 24,
@@ -308,7 +355,9 @@
         "preco": 979.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/2.png"
-        ]
+        ],
+        "terreno": "Pista",
+        "genero": "Feminino"
       },
       {
         "id": 25,
@@ -320,7 +369,9 @@
         "preco": 889.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/3.png"
-        ]
+        ],
+        "terreno": "Pista",
+        "genero": "Masculino"
       },
       {
         "id": 26,
@@ -332,7 +383,9 @@
         "preco": 599.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/4.png"
-        ]
+        ],
+        "terreno": "Pista",
+        "genero": "Masculino"
       },
       {
         "id": 27,
@@ -344,7 +397,9 @@
         "preco": 409.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/5.png"
-        ]
+        ],
+        "terreno": "Pista",
+        "genero": "Masculino"
       },
       {
         "id": 28,
@@ -356,7 +411,9 @@
         "preco": 999.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/6.png"
-        ]
+        ],
+        "terreno": "Trilha",
+        "genero": "Feminino"
       },
       {
         "id": 29,
@@ -368,7 +425,9 @@
         "preco": 299.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/7.png"
-        ]
+        ],
+        "terreno": "Trilha",
+        "genero": "Masculino"
       },
       {
         "id": 30,
@@ -380,7 +439,9 @@
         "preco": 409.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/8.png"
-        ]
+        ],
+        "terreno": "Trilha",
+        "genero": "Feminino"
       },
       {
         "id": 31,
@@ -392,7 +453,9 @@
         "preco": 929.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/9.png"
-        ]
+        ],
+        "terreno": "Trilha",
+        "genero": "Feminino"
       },
       {
         "id": 32,
@@ -404,7 +467,9 @@
         "preco": 669.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/10.png"
-        ]
+        ],
+        "terreno": "Trilha",
+        "genero": "Masculino"
       },
       {
         "id": 33,
@@ -416,7 +481,9 @@
         "preco": 999.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/11.png"
-        ]
+        ],
+        "terreno": "Pista",
+        "genero": "Feminino"
       },
       {
         "id": 34,
@@ -428,7 +495,9 @@
         "preco": 589.90,
         "fotosLaterais": [
           "../../assets/tenisShop/run/12.png"
-        ]
+        ],
+        "terreno": "Trilha",
+        "genero": "Masculino"
       }
     ]
   }

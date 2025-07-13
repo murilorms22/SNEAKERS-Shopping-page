@@ -35,52 +35,31 @@
     </div>
   </header>
   <body id="bodyShopping">
-    <div id="sideBar">
-      <h1>Estilo</h1>
-      <div class="filtros">
-        <p>Basquete</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Vôlei</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Futsal</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Handebol</p>
-        <input type="checkbox" />
-      </div>
-      <h1>Modelo</h1>
-      <div class="filtros">
-        <p>Masculino</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Feminino</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Unissex</p>
-        <input type="checkbox" />
-      </div>
-      <div class="filtros">
-        <p>Infantil</p>
-        <input type="checkbox" />
-      </div>
-    </div>
     <div id="containerShopping">
-      <div>
+      <div id="containerHeaderShopping">
+        <div id="esquerda">
         <p>
           Classificar por:
+        </p>
           <select name="selectClassificar" id="selectClassificar">
             <option value="1">Relevância</option>
             <option value="3">Preço crescente</option>
             <option value="2">Preço decrescente</option>
           </select>
-        </p>
+        <select name="filtroEstilo" id="filtroEstilo">
+          <option value="1">Terreno</option>
+          <option value="2">Pista</option>
+          <option value="3">Trilha</option>
+        </select>
+        <select name="filtroModelo" id="filtroModelo">
+          <option value="1">Gênero</option>
+          <option value="2">Masculino</option>
+          <option value="3">Feminino</option>
+        </select> 
+        </div>
+        <div id="direita">
+          <input type="text" id="campoBusca" placeholder="Buscar produtos..." />
+        </div>
       </div>
 
       <div id="produtos" class="mtop"></div>

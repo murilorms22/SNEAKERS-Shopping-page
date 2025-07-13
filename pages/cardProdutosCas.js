@@ -43,6 +43,30 @@ function classificacao() {
   })
 }
 
+function aplicarFiltros() {
+  const filtroEstilo = document.getElementById('filtroEstilo').value;
+  const filtroGenero = document.getElementById('filtroModelo').value;
+
+  let listaFiltrada = [...produtos];
+
+  if (filtroEstilo === '2') {
+    listaFiltrada = listaFiltrada.filter(p => p.modelo?.toLowerCase() === 'camurça');
+  } else if (filtroEstilo === '3') {
+    listaFiltrada = listaFiltrada.filter(p => p.modelo?.toLowerCase() === 'couro');
+  }
+
+  if (filtroGenero === '2') {
+    listaFiltrada = listaFiltrada.filter(p => p.genero?.toLowerCase() === 'masculino');
+  } else if (filtroGenero === '3') {
+    listaFiltrada = listaFiltrada.filter(p => p.genero?.toLowerCase() === 'feminino');
+  }
+
+  mostrarProdutos(listaFiltrada);
+}
+
+document.getElementById('filtroEstilo').addEventListener('change', aplicarFiltros);
+document.getElementById('filtroModelo').addEventListener('change', aplicarFiltros);
+
 fetch('./produtos/produtos.json')
   .then(response => response.json())
   .then(categorias => {
