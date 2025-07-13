@@ -26,8 +26,8 @@ fetch("produtos.JSON")
             
             const imagensLaterais = document.querySelectorAll(".fotosLaterais");
 
-            imagensLaterais.forEach((img, index) => {
-                img.src = produtoEncontrado.fotosLaterais[index] || produtoEncontrado.imagem;
+            imagensLaterais.forEach((img) => {
+                img.src = produtoEncontrado.imagem;
             });
 
         } else {

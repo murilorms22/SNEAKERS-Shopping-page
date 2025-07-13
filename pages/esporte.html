@@ -25,7 +25,6 @@
         </ul>
       </nav>
       <div id="iconsHeader">
-        <img src="../assets/icons/lupa.png" alt="carrinho de compras" />
         <a href="./carrinho/carrinho.html"
           ><img src="../assets/icons/cart.png" alt="carrinho de compras"
         /></a>
@@ -73,15 +72,32 @@
       </div>
     </div>
     <div id="containerShopping">
-      <div>
+      <div id="containerHeaderShopping">
+        <div>
         <p>
           Classificar por:
           <select name="selectClassificar" id="selectClassificar">
-            <option value="1">Selecione</option>
+            <option value="1">Relevância</option>
             <option value="3">Preço crescente</option>
             <option value="2">Preço decrescente</option>
           </select>
         </p>
+        <select name="filtroEstilo" id="filtroEstilo">
+          <option value="1">Estilo</option>
+          <option value="2">Basquete</option>
+          <option value="3">Vôlei</option>
+          <option value="4">Futsal</option>
+          <option value="5">Handebol</option>
+        </select>
+        <select name="filtroModelo" id="filtroModelo">
+          <option value="1">Modelo</option>
+          <option value="2">Masculino</option>
+          <option value="3">Feminino</option>
+          <option value="4">Unissex</option>
+          <option value="5">Infantil</option>  
+        </div>
+        
+        <input type="text" id="campoBusca" placeholder="Buscar produtos..." />
       </div>
 
       <div id="produtos" class="mtop"></div>
