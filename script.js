@@ -3,21 +3,24 @@ function sleep(ms) {
 }
 
 async function loop() {
-    
+    const imgCarrossel = document.getElementById("imgCarrossel");
+    const linkCarrossel = document.getElementById("linkCarrossel");
+
     for(let i=1; i<=3; i++){
 
         if(i == 1) {
-            document.getElementById("imgCarrossel").src = "assets/images/puma.jpg"
-            
+            imgCarrossel.src = "assets/images/puma.jpg";
+            linkCarrossel.href = "../../index.html";
         }
         
         if(i == 2) {
-            document.getElementById("imgCarrossel").src = "assets/images/skate.jpg"
+            imgCarrossel.src = "assets/images/skate.jpg";
+            linkCarrossel.href = "../../index.html";
         }
         
         if(i == 3) {
-            document.getElementById("imgCarrossel").src = "assets/images/luka.jpg"
-
+            imgCarrossel.src = "assets/images/luka.jpg";
+            linkCarrossel.href = "/pages/produtos/produto.html?id=3";
         }
         
         await sleep(7000);

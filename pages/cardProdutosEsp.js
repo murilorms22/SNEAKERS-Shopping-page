@@ -23,6 +23,10 @@ function mostrarProdutos(lista) {
         `;
         container.appendChild(card);
   })
+
+  if (lista.length === 0) {
+    container.innerHTML = '<p>Nenhum produto encontrado.</p>';
+  }
 }
 
 function classificacao() {

@@ -183,6 +183,20 @@
         ],
         "modelo": "Camurça",
         "genero": "Masculino"
+      },
+      {
+        "id": 36,
+        "nome": "PUMA Carina BDP",
+        "descricao": "Tênis Casual",
+        "descricaoGrande": "Tênis casual PUMA Carina BDP, ideal para o dia a dia. Confortável e estiloso, combina com diversos looks.",
+        "cores": 2,
+        "preco": 459.90,
+        "imagem": "../../assets/tenisShop/casual/36.webp",
+        "fotosLaterais": [
+          "../../assets/tenisShop/casual/13.webp"
+        ],
+        "modelo": "Camurça",
+        "genero": "Masculino"
       }
     ]
   },
@@ -325,6 +339,20 @@
         ],
         "estilo": "Basquete",
         "genero": "Feminino"
+      },
+      {
+        "id": 37,
+        "imagem": "../../assets/tenisShop/esporte/nike11.png",
+        "nome": "LUKA x Air Jordan 36 \"Eslovênia\"",
+        "cores": 1,
+        "descricao": "Tênis esportivo",
+        "descricaoGrande": "Tênis de basquete LUKA x Air Jordan 36 \"Eslovênia\", projetado para conforto e performance em quadra. Com tecnologia avançada, oferece suporte e amortecimento ideais para jogadores.",
+        "preco": 299.90,
+        "fotosLaterais": [
+          "../../assets/tenisShop/esporte/nike11.webp"
+        ],
+        "estilo": "Basquete",
+        "genero": "Masculino"
       }
     ]
   },
