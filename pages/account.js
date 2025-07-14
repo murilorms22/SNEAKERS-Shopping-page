@@ -1,7 +1,31 @@
 const botoes = document.querySelectorAll(".botoesAccount button");
 const container = document.querySelector(".accountInfos");
+const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-botoes.forEach(botao => {
+fetch("./produtos/produtos.json")
+.then((res) => res.json())
+.then((categorias) => {
+  let produtosDetalhados = [];
+  
+  for (const item of carrinho) {
+    for (const categoria of categorias) {
+      const prod = categoria.produtos.find((p) => p.id == item.id);
+      if (prod) {
+        produtosDetalhados.push({
+          id: prod.id,
+          nome: prod.nome,
+          descricao: prod.descricao,
+          imagem: prod.imagem,
+          preco: prod.preco,
+          quantidade: item.quantidade,
+          tamanho: item.tamanho || "-",
+        });
+          break;
+        }
+      }
+    }
+
+    botoes.forEach(botao => {
   botao.addEventListener("click", function () {
     botoes.forEach(b => b.classList.remove("btnSelected"));
     this.classList.add("btnSelected");
@@ -51,16 +75,47 @@ botoes.forEach(botao => {
         break;
 
       case "historico":
-        conteudo = `
+        const comprasRecentes = localStorage.getItem("comprasRecentes");
+        if(comprasRecentes) {
+          conteudo = `
+      <h1>Histórico de compras</h1>
+      <div class="infoPai">
+        ${produtosDetalhados
+          .map(
+            (produto) => `
+              <div class="info">
+                <a href="../produtos/produto.html?id=${produto.id}">
+                  <div class="infoEsquerda">
+                    <img src="${produto.imagem}" alt="${produto.nome}" >
+                    <div>
+                      <h2>${produto.nome}</h2>
+                      <p>${produto.descricao}</p>
+                      <p>Preço unitário: R$${produto.preco
+                        .toFixed(2)
+                        .replace(".", ",")}</p>
+                      <p>Tamanho: ${produto.tamanho}</p>
+                      <p>Quantidade: ${produto.quantidade}</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            `
+          )
+          .join("")}
+      </div>
+    `; break;
+        } else {
+          conteudo = `
           <h1>Histórico de compras</h1>
-            <div class="infoPai">
-                <div class="info">
-                <p>Você ainda não possui compras registradas.</p>
-                <button class="voltarLoja">Voltar para loja</button>
-                </div>
-            </div>
-        `;
-        break;
+              <div class="infoPai">
+                  <div class="info">
+                  <p>Você ainda não possui compras registradas.</p>
+                  <button class="voltarLoja">Voltar para loja</button>
+                  </div>
+              </div>
+          `;
+          break;
+        }
 
       case "aparencia":
         conteudo = `
@@ -75,5 +130,6 @@ botoes.forEach(botao => {
     container.innerHTML = conteudo;
   });
 });
+  })
 
-document.querySelector('button[data-id="info"]').click();
+  document.querySelector('button[data-id="info"]').click();
