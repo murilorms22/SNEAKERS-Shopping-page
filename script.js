@@ -10,17 +10,17 @@ async function loop() {
 
         if(i == 1) {
             imgCarrossel.src = "assets/images/puma.jpg";
-            linkCarrossel.href = "../../index.html";
+            linkCarrossel.href = "/pages/produtos/produto.html?id=36";
         }
         
         if(i == 2) {
             imgCarrossel.src = "assets/images/skate.jpg";
-            linkCarrossel.href = "../../index.html";
+            linkCarrossel.href = "/pages/produtos/produto.html?id=35";
         }
         
         if(i == 3) {
             imgCarrossel.src = "assets/images/luka.jpg";
-            linkCarrossel.href = "/pages/produtos/produto.html?id=3";
+            linkCarrossel.href = "/pages/produtos/produto.html?id=37";
         }
         
         await sleep(7000);
