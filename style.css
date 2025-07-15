@@ -149,7 +149,8 @@ header img {
   padding: 10px 20px 15px 20px;
   border-radius: 9999px;
   font-size: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-shadow: 0px 0px 20px #0000006c;
 }
 
@@ -183,7 +184,7 @@ header img {
   justify-content: space-between;
 }
 
-.footerDireita a{
+.footerDireita a {
   color: rgba(255, 255, 255, 0.824);
   text-decoration: underline;
 }
@@ -234,7 +235,7 @@ header img {
   font-size: 16px;
 }
 
-#direita input{
+#direita input {
   width: 300px;
   height: 100%;
   padding: 10px 10px;
@@ -248,7 +249,7 @@ header img {
   flex-direction: column;
   width: 100%;
   margin-inline: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(242, 242, 242);
 }
 
 #selectClassificar {
@@ -259,7 +260,7 @@ header img {
 }
 
 .filtros {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   height: 30px;
   width: 95%;
@@ -784,6 +785,7 @@ a button.btnVerMais {
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  padding-right: 10px;
 }
 
 .info {
@@ -886,7 +888,7 @@ button.voltarLoja {
   }
 }
 
-#finalContainer  {
+#finalContainer {
   width: 1440px;
   display: flex;
   height: 75vh;
@@ -939,13 +941,31 @@ span.linkFinal {
   text-decoration: none;
 }
 
+#cardProdutoCheckout::-webkit-scrollbar {
+  width: 10px;
+}
+
+#cardProdutoCheckout::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 3px;
+}
+
+#cardProdutoCheckout::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+#cardProdutoCheckout::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
 #cardProdutoCheckout {
   width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
   overflow: auto;
-  gap: 10px;
+  padding-right: 10px;
 }
 
 .produtoCheckout img {
@@ -959,12 +979,11 @@ span.linkFinal {
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background-color: rgb(51, 50, 50);
   color: white;
   gap: 5px;
-  margin-block: 20px;
+  margin-block: 5px;
 }
 
 .infoCheckoutNome {
@@ -1003,3 +1022,40 @@ span.linkFinal {
   font-weight: 600;
 }
 
+.infoPai::-webkit-scrollbar {
+  width: 10px;
+}
+
+.infoPai::-webkit-scrollbar-track {
+  background: var(--not-black);
+  border-radius: 3px;
+}
+
+.infoPai::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.infoPai::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.infoPai::-webkit-scrollbar-thumb:active {
+  background: #444;
+}
+
+#qtdNotificacoes {
+  all: initial !important;
+  position: relative !important;
+  width: 30px !important;
+  top: -30px !important;
+  right: -60px !important;
+  background-color: red !important;
+  color: white !important;
+  border-radius: 999px !important;
+  padding: 5px 10px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}

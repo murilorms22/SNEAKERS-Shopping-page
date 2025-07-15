@@ -1,4 +1,7 @@
 let produtosCarrinho = [];
+let nomeProduto;
+let imagemProduto;
+let precoProduto;
 
 function mostrarProdutos(carrinho) {
   const container = document.getElementById("listaCarrinho");
@@ -59,18 +62,16 @@ function mostrarProdutos(carrinho) {
         const item = carrinho.find(p => p.id == produtoId && p.tamanho == produtoTamanho);
 
         if (!item) {
-          console.error("Produto não encontrado no carrinho");
+          console.log("Produto não encontrado no carrinho");
           return;
         }
 
         if (item) {
-      item.quantidade = novaQuantidade;
+          item.quantidade = novaQuantidade;
 
-      const carrinhoAtualizado = carrinho.map(p => ({ id: p.id, quantidade: p.quantidade, tamanho: p.tamanho }));
-
-      localStorage.setItem("carrinho", JSON.stringify(carrinhoAtualizado));
-      window.location.reload(); 
-    }
+          localStorage.setItem("carrinho", JSON.stringify(carrinho));
+          window.location.reload();
+}
   });
 });
 
@@ -134,6 +135,10 @@ fetch("../produtos/produtos.json")
     document.getElementById("taxaEntrega").textContent = taxaEntrega.toFixed(2).replace(".", ",");
     document.getElementById("descontos").textContent = descontos.toFixed(2).replace(".", ",");
     document.getElementById("precoFinal").textContent = "R$" + totalFinal.toFixed(2).replace(".", ",");
+
+    nomeProduto = produtosDetalhados.nome;
+    imagemProduto = produtosDetalhados.imagem;
+    precoProduto = produtosDetalhados.preco;
   })
   
   .catch((erro) => {
@@ -202,3 +207,9 @@ document.querySelector("#btnFinalizarCompra").addEventListener("click", function
     
 });
 
+const qtdCarrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+const notificacaoCarrinho = document.getElementById("qtdNotificacoes");
+
+if(qtdCarrinho.length > 0) {
+    notificacaoCarrinho.innerHTML = `${qtdCarrinho.length}`
+}

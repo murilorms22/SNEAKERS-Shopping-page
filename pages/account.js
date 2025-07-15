@@ -67,6 +67,7 @@ const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
               <p>Tamanho: ${prod.tamanho}</p>
               <p>Quantidade: ${prod.quantidade}</p>
             </div>
+            <div class="precoHistorico">R$${prod.preco.toFixed(2)}</div>
           </div>
         </a>
       </div>
@@ -106,4 +107,13 @@ const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
   });
 });
 
-document.querySelector('button[data-id="historico"]').click();
+document.querySelector('button[data-id="info"]').click();
+
+//noficação com quantidade - carrinho
+
+qtdCarrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+notificacaoCarrinho = document.getElementById("qtdNotificacoes");
+
+if(qtdCarrinho.length > 0) {
+    notificacaoCarrinho.innerHTML = `${qtdCarrinho.length}`
+}

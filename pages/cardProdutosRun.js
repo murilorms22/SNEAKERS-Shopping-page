@@ -103,3 +103,10 @@ fetch('./produtos/produtos.json')
   .catch(error => {
     console.error("Erro ao carregar os produtos:", error);
   })
+
+    qtdCarrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    notificacaoCarrinho = document.getElementById("qtdNotificacoes");
+
+if(qtdCarrinho.length > 0) {
+    notificacaoCarrinho.innerHTML = `${qtdCarrinho.length}`
+}

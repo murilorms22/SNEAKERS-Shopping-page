@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNEAKERS | Menu</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/tenis.png" type="image/x-icon">
 </head>
@@ -21,7 +20,7 @@
             </ul>
         </nav>
         <div id="iconsHeader">
-            <a href="pages/carrinho/carrinho.html"><img src="./assets/icons/cart.png" alt="carrinho de compras"></a>
+            <a href="pages/carrinho/carrinho.html"><p id="qtdNotificacoes">0</p><img src="./assets/icons/cart.png" alt="carrinho de compras"></a>
             <a href="pages/account.html"><img src="assets/icons/account.png" alt="conta usuario"></a>
         </div>
     </div>
@@ -30,13 +29,13 @@
     <div id="containerBody">
         <div id="carrossel" class="mtop">
             <a href="#" id="linkCarrossel">
-            <img id="imgCarrossel" src="assets/images/puma.jpg" alt="Carrossel de fotos">
+                <img id="imgCarrossel" src="assets/images/puma.jpg" alt="Carrossel de fotos">
             </a>
             <div class="progress-bar">
                 <div class="progress" id="progress"></div>
             </div>            
         </div>
-
+        
         <div id="grid">
             <div class="cardTenis">
                 <a href="pages/run.html">
@@ -82,5 +81,6 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
 </body>
 </html>

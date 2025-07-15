@@ -60,3 +60,10 @@ function toggleButton(button) {
     
     button.classList.add('selected');
 }
+
+    let qtdCarrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    let notificacaoCarrinho = document.getElementById("qtdNotificacoes");
+
+if(qtdCarrinho.length > 0) {
+    notificacaoCarrinho.innerHTML = `${qtdCarrinho.length}`
+}

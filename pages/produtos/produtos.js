@@ -95,3 +95,10 @@ function adicionarAoCarrinho(idProduto) {
 
     location.reload();
 }
+
+const qtdCarrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+const notificacaoCarrinho = document.getElementById("qtdNotificacoes");
+
+if(qtdCarrinho.length > 0) {
+    notificacaoCarrinho.innerHTML = `${qtdCarrinho.length}`
+}

@@ -68,6 +68,20 @@ function aplicarFiltros() {
   mostrarProdutos(listaFiltrada);
 }
 
+function ativarBusca() {
+  const campoBusca = document.getElementById('campoBusca');
+
+  campoBusca.addEventListener('input', () => {
+    const termo = campoBusca.value.toLowerCase();
+
+    const filtrados = produtos.filter(produto =>
+      produto.nome.toLowerCase().includes(termo)
+    );
+
+    mostrarProdutos(filtrados);
+  });
+}
+
 document.getElementById('filtroEstilo').addEventListener('change', aplicarFiltros);
 document.getElementById('filtroModelo').addEventListener('change', aplicarFiltros);
 
@@ -88,3 +102,12 @@ fetch('./produtos/produtos.json')
   .catch(error => {
     console.error("Erro ao carregar os produtos:", error);
   })
+
+//noficação com quantidade - carrinho
+
+    qtdCarrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    notificacaoCarrinho = document.getElementById("qtdNotificacoes");
+
+if(qtdCarrinho.length > 0) {
+    notificacaoCarrinho.innerHTML = `${qtdCarrinho.length}`
+}
