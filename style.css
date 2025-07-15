@@ -780,9 +780,10 @@ a button.btnVerMais {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 400px;
-  flex-wrap: wrap;
+  min-height: 500px;
   width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .info {
@@ -901,7 +902,7 @@ button.voltarLoja {
   flex-direction: column;
   margin: auto;
   width: 700px;
-  min-height: 700px;
+  min-height: 400px;
   max-height: 1000px;
   padding-block: 50px;
   justify-content: center;
@@ -963,6 +964,7 @@ span.linkFinal {
   background-color: rgb(51, 50, 50);
   color: white;
   gap: 5px;
+  margin-block: 20px;
 }
 
 .infoCheckoutNome {
@@ -973,3 +975,31 @@ span.linkFinal {
   font-size: 20px;
   font-weight: 600;
 }
+
+.cardHistorico {
+  width: 100%;
+  background-color: var(--not-black);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cardHistorico img {
+  width: 150px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+.infosHistorico {
+  color: white;
+  width: 100%;
+}
+
+.precoHistorico {
+  align-items: right;
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  font-weight: 600;
+}
+

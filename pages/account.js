@@ -2,28 +2,7 @@ const botoes = document.querySelectorAll(".botoesAccount button");
 const container = document.querySelector(".accountInfos");
 const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-fetch("./produtos/produtos.json")
-.then((res) => res.json())
-.then((categorias) => {
-  let produtosDetalhados = [];
-  
-  for (const item of carrinho) {
-    for (const categoria of categorias) {
-      const prod = categoria.produtos.find((p) => p.id == item.id);
-      if (prod) {
-        produtosDetalhados.push({
-          id: prod.id,
-          nome: prod.nome,
-          descricao: prod.descricao,
-          imagem: prod.imagem,
-          preco: prod.preco,
-          quantidade: item.quantidade,
-          tamanho: item.tamanho || "-",
-        });
-          break;
-        }
-      }
-    }
+
 
     botoes.forEach(botao => {
   botao.addEventListener("click", function () {
@@ -31,7 +10,7 @@ fetch("./produtos/produtos.json")
     this.classList.add("btnSelected");
 
     const id = this.getAttribute("data-id");
-
+    
     let conteudo = "";
     switch (id) {
       case "info":
@@ -75,47 +54,43 @@ fetch("./produtos/produtos.json")
         break;
 
       case "historico":
-        const comprasRecentes = localStorage.getItem("comprasRecentes");
-        if(comprasRecentes) {
-          conteudo = `
+  const comprasRecentes = JSON.parse(localStorage.getItem("comprasRecentes")) || [];
+
+  if (comprasRecentes.length > 0) {
+    const cards = comprasRecentes.map(prod => `
+      <div class="cardHistorico">
+        <a href="../pages/produtos/produto.html?id=${prod.id}">
+          <div class="infoEsquerda">
+            <img src="${prod.imagem}" alt="${prod.nome}">
+            <div class="infosHistorico">
+              <h2>${prod.nome}</h2>
+              <p>Tamanho: ${prod.tamanho}</p>
+              <p>Quantidade: ${prod.quantidade}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    `).join("");
+
+    conteudo = `
       <h1>Histórico de compras</h1>
       <div class="infoPai">
-        ${produtosDetalhados
-          .map(
-            (produto) => `
-              <div class="info">
-                <a href="../produtos/produto.html?id=${produto.id}">
-                  <div class="infoEsquerda">
-                    <img src="${produto.imagem}" alt="${produto.nome}" >
-                    <div>
-                      <h2>${produto.nome}</h2>
-                      <p>${produto.descricao}</p>
-                      <p>Preço unitário: R$${produto.preco
-                        .toFixed(2)
-                        .replace(".", ",")}</p>
-                      <p>Tamanho: ${produto.tamanho}</p>
-                      <p>Quantidade: ${produto.quantidade}</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            `
-          )
-          .join("")}
+        ${cards}
       </div>
-    `; break;
-        } else {
-          conteudo = `
-          <h1>Histórico de compras</h1>
-              <div class="infoPai">
-                  <div class="info">
-                  <p>Você ainda não possui compras registradas.</p>
-                  <button class="voltarLoja">Voltar para loja</button>
-                  </div>
-              </div>
-          `;
-          break;
-        }
+    `;
+
+  } else {
+    conteudo = `
+      <h1>Histórico de compras</h1>
+      <div class="infoPai">
+        <div class="info">
+          <p>Você ainda não possui compras registradas.</p>
+          <button class="voltarLoja">Voltar para loja</button>
+        </div>
+      </div>
+    `;
+  }
+  break;
 
       case "aparencia":
         conteudo = `
@@ -130,6 +105,5 @@ fetch("./produtos/produtos.json")
     container.innerHTML = conteudo;
   });
 });
-  })
 
-  document.querySelector('button[data-id="info"]').click();
+document.querySelector('button[data-id="historico"]').click();

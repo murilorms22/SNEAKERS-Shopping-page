@@ -190,7 +190,7 @@ document.querySelector("#btnFinalizarCompra").addEventListener("click", function
 
       let compraAtual = JSON.parse(localStorage.getItem("carrinhoAtual"));
 
-      comprasRecentes.push(carrinhoAtual);
+      comprasRecentes = comprasRecentes.concat(carrinhoAtual)
       compraAtual = carrinhoAtual;
 
       localStorage.setItem("comprasRecentes", JSON.stringify(comprasRecentes));
