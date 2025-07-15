@@ -73,6 +73,12 @@ function mostrarProdutos(carrinho) {
     }
   });
 });
+
+const tituloMeuCarrinho = document.getElementById("tituloMeuCarrinho");
+  if (carrinho.length > 0) {
+    tituloMeuCarrinho.textContent = `Meu carrinho (${carrinho.length})`;
+  }
+
 });
 }
 
@@ -130,8 +136,8 @@ fetch("../produtos/produtos.json")
     document.getElementById("precoFinal").textContent = "R$" + totalFinal.toFixed(2).replace(".", ",");
   })
   
-  .catch((err) => {
-    console.error("Erro ao carregar produtos:", err);
+  .catch((erro) => {
+    console.error("Erro ao carregar produtos:", erro);
   });
 
 function finalizarCompra() {}
@@ -185,13 +191,14 @@ document.querySelector("#btnFinalizarCompra").addEventListener("click", function
       let compraAtual = JSON.parse(localStorage.getItem("carrinhoAtual"));
 
       comprasRecentes.push(carrinhoAtual);
-      compraAtual = [carrinhoAtual];
+      compraAtual = carrinhoAtual;
 
       localStorage.setItem("comprasRecentes", JSON.stringify(comprasRecentes));
       localStorage.setItem("compraAtual", JSON.stringify(compraAtual));
       
         localStorage.removeItem("carrinho");
-        location.href = "./finalCompra.html";
+        location.href = "./checkout.html";
     }, 3000);
     
 });
+

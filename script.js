@@ -23,7 +23,7 @@ async function loop() {
             linkCarrossel.href = "/pages/produtos/produto.html?id=37";
         }
         
-        await sleep(7000);
+        await sleep(3000);
         if(i==3) {
             i = 0;
         }
@@ -39,10 +39,10 @@ function startProgressBar() {
 
         void progress.offsetWidth;
 
-        progress.style.transition = "width 7s linear";
+        progress.style.transition = "width 3s linear";
         progress.style.width = "100%";
 
-        setTimeout(loop, 7000);
+        setTimeout(loop, 3000);
     }
 
     loop();

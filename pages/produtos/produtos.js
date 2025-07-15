@@ -4,6 +4,8 @@ function getQueryParam(param) {
 }
 
 const idProduto = getQueryParam("id");
+let nomeProduto;
+let imagemProduto;
 
 fetch("produtos.JSON")
     .then(response => response.json())
@@ -33,6 +35,9 @@ fetch("produtos.JSON")
         } else {
             document.body.innerHTML = "<h2>Produto não encontrado</h2>";
         }
+
+        nomeProduto = produtoEncontrado.nome;
+        imagemProduto = produtoEncontrado.imagem;
     })
     .catch(error => {
         console.error("Erro:", error);
@@ -80,7 +85,7 @@ function adicionarAoCarrinho(idProduto) {
         }
         existente.quantidade += 1;
     } else {
-        carrinho.push({ id: idProduto, quantidade: 1, tamanho: tamanhoSelecionado.value });
+        carrinho.push({ id: idProduto, quantidade: 1, tamanho: tamanhoSelecionado.value, nome: nomeProduto, imagem: imagemProduto });
     }
 
     localStorage.setItem("carrinho", JSON.stringify(carrinho));

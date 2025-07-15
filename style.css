@@ -888,7 +888,7 @@ button.voltarLoja {
 #finalContainer  {
   width: 1440px;
   display: flex;
-  height: 100vh;
+  height: 75vh;
   flex-direction: column;
   margin-inline: auto;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -901,7 +901,8 @@ button.voltarLoja {
   flex-direction: column;
   margin: auto;
   width: 700px;
-  height: 700px;
+  min-height: 700px;
+  max-height: 1000px;
   padding-block: 50px;
   justify-content: center;
   align-items: center;
@@ -915,7 +916,11 @@ button.voltarLoja {
 
 p.sucesso {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+span.sucesso {
+  font-weight: 700;
 }
 
 p.secao {
@@ -931,4 +936,40 @@ span.linkFinal {
   color: rgb(136, 121, 223);
   font-weight: 700;
   text-decoration: none;
+}
+
+#cardProdutoCheckout {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 10px;
+}
+
+.produtoCheckout img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.produtoCheckout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: rgb(51, 50, 50);
+  color: white;
+  gap: 5px;
+}
+
+.infoCheckoutNome {
+  width: 200px;
+}
+
+.infosCheckoutPequenas {
+  font-size: 20px;
+  font-weight: 600;
 }
