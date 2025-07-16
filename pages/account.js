@@ -92,15 +92,6 @@ const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
     `;
   }
   break;
-
-      case "aparencia":
-        conteudo = `
-          <h1>Personalizar Aparência</h1>
-          <p>Escolha o tema do seu perfil:</p>
-          <button>Claro</button>
-          <button>Escuro</button>
-        `;
-        break;
     }
 
     container.innerHTML = conteudo;

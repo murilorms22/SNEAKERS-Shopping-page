@@ -102,3 +102,12 @@ const notificacaoCarrinho = document.getElementById("qtdNotificacoes");
 if(qtdCarrinho.length > 0) {
     notificacaoCarrinho.innerHTML = `${qtdCarrinho.length}`
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menuHamburguer");
+  const menuMobile = document.getElementById("menuMobile");
+
+  menuBtn.addEventListener("click", () => {
+    menuMobile.classList.toggle("show");
+  });
+});
