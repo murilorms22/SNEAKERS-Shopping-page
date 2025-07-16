@@ -10,28 +10,42 @@
     <link rel="stylesheet" href="../style.css" />
     <script src="../script.js"></script>
   </head>
-  <header class="esporte">
+  <header id="main-header">
     <div id="headerContent">
-      <div>
-        <a href="../index.html"
-          ><img src="../assets/icons/white-logo.png" alt="logo do site"
-        /></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="../pages/esporte.html">Esporte</a></li>
-          <li><a href="../pages/casual.html">Casual</a></li>
-          <li><a href="../pages/run.html">Corrida</a></li>
+        <div id="menuHamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav id="menuMobile">
+        <ul class="navMobile">
+            <h1 class="textoMobile">CALÇADOS</h1>
+            <li><img src="../assets/icons/tenis.png"><a href="./esporte.html">Esporte</a></li>
+            <li><img src="../assets/icons/tenis.png"><a href="./casual.html">Casual</a></li>
+            <li><img src="../assets/icons/tenis.png"><a href="./run.html">Corrida</a></li>
+            <div class="miniLinha"></div>
+            <li><img src="../assets/icons/account.png"><a href="./account.html">Minha conta</a></li>
+            <li><img src="../assets/icons/cart.png"><a href="./carrinho/carrinho.html">Carrinho</a></li>
         </ul>
-      </nav>
-      <div id="iconsHeader">
-        <a href="./carrinho/carrinho.html"><p id="qtdNotificacoes">0</p><img src="../assets/icons/cart.png" alt="carrinho de compras"></a>
-        <a href="./account.html"
-          ><img src="../assets/icons/account.png" alt="conta usuario"
-        /></a>
-      </div>
+        </nav>
+
+        <div>
+            <a href="../index.html"><img src="../assets/icons/white-logo.png" alt="logo do site"></a>
+        </div>
+        <nav>
+            <ul class="menuTop">
+                <li><a href="./esporte.html">Esporte</a></li>
+                <li><a href="./casual.html">Casual</a></li>
+                <li><a href="./run.html">Corrida</a></li>
+            </ul>
+        </nav>
+        <div id="iconsHeader">
+            <a href="./carrinho/carrinho.html"><p id="qtdNotificacoes">0</p><img src="../assets/icons/cart.png" alt="carrinho de compras"></a>
+            <a href="./account.html"><img src="../assets/icons/account.png" alt="conta usuario"></a>
+        </div>
     </div>
-  </header>
+</header>
   <body id="bodyShopping">
     <div id="containerShopping">
       <div id="containerHeaderShopping">
