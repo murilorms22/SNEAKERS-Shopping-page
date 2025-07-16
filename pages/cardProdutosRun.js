@@ -50,6 +50,8 @@ function classificacao() {
 function aplicarFiltros() {
   const filtroEstilo = document.getElementById('filtroEstilo').value;
   const filtroGenero = document.getElementById('filtroModelo').value;
+  const ordemClassificacao = document.getElementById('selectClassificar').value;
+  const termoBusca = document.getElementById('campoBusca').value.toLowerCase();
 
   let listaFiltrada = [...produtos];
 
@@ -65,11 +67,25 @@ function aplicarFiltros() {
     listaFiltrada = listaFiltrada.filter(p => p.genero?.toLowerCase() === 'feminino');
   }
 
+  if(ordemClassificacao === '2') {
+    listaFiltrada.sort((a, b) => b.preco - a.preco);
+  } else if (ordemClassificacao === '3') {
+    listaFiltrada.sort((a, b) => a.preco - b.preco);
+  }
+
+  if (termoBusca !== '') {
+    listaFiltrada = listaFiltrada.filter(p =>
+      p.nome.toLowerCase().includes(termoBusca)
+    );
+  }
+
   mostrarProdutos(listaFiltrada);
 }
 
 document.getElementById('filtroEstilo').addEventListener('change', aplicarFiltros);
 document.getElementById('filtroModelo').addEventListener('change', aplicarFiltros);
+document.getElementById('selectClassificar').addEventListener('change', aplicarFiltros);
+document.getElementById('campoBusca').addEventListener('input', aplicarFiltros);
 
 function ativarBusca() {
   const campoBusca = document.getElementById('campoBusca');
@@ -93,8 +109,6 @@ fetch('./produtos/produtos.json')
     if(categoriaCorrida && categoriaCorrida.produtos){
       produtos = categoriaCorrida.produtos;
       mostrarProdutos(produtos);
-      classificacao();
-      ativarBusca();
     } else {
       document.getElementById('produtos').innerHTML = '<p>Nenhum produto foi encontrado.</p>'
     }
