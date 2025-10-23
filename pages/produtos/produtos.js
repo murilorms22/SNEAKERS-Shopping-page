@@ -8,7 +8,7 @@ let nomeProduto;
 let imagemProduto;
 let precoProduto;
 
-fetch("produtos.JSON")
+fetch("produtos.json")
     .then(response => response.json())
     .then(categorias => {
         let produtoEncontrado = null;
